@@ -1,0 +1,23 @@
+install.packages("devtools")
+install.packages("shiny")
+install.packages("xts")
+install.packages("shinyBS")
+install.packages("R.cache")
+install.packages("jsonlite")
+install.packages("DT")
+install.packages("data.table")
+install.packages("digest")
+install.packages("R.utils")
+install.packages("shinydashboard")
+
+ devtools::install_github("booysej/rpivotTable")
+devtools::install_github("booysej/googleVis")
+devtools::install_github("booysej/cridfdata") ## Takes long (BIG)
+devtools::install_github("shiny-gridster", "wch") ## Needs Root
+devtools::install_github("booysej/DiagrammeR")
+devtools::install_github("booysej/leaflet")
+devtools::install_github("booysej/shinyTree")
+devtools::install_github("rstudio/shiny-incubator")
+devtools::install_github("booysej/googleVis")
+devtools::install_github('ramnathv/rCharts')
+
