@@ -1,0 +1,143 @@
+id,series,applicable level,unit,show,type
+1,Annual Investment,Centralised Generation,US$/1000,yes,Result
+2,Annual Investment,Distributed Generation,US$/1000,yes,Result
+3,CO2,Energy Source,tonne?,yes,Result
+4,Demand,Demand,MWyr,yes,Result
+5,Fuel Cost,Energy Source,US$/1000,yes,Result
+6,Generation,Centralised Generation,MWyr,yes,Result
+7,Generation,Distributed Generation,MWyr,yes,Result
+8,Import Capacity,Transmission,MW,yes,Result
+9,Investment,Centralised Generation,US$/1000,yes,Result
+10,Investment,Distributed Generation,US$/1000,yes,Result
+11,Losses,Transmission,MWyr,yes,Result
+12,Marginal Price,Demand,US$/1000/kWyr?,yes,Result
+13,Net Export,Transmission,MWyr,yes,Result
+14,New Capacity,Centralised Generation,MW,yes,Result
+15,New Capacity,Distributed Generation,MW,yes,Result
+16,O&M Costs,Centralised Generation,US$/1000,yes,Result
+17,O&M Costs,Distributed Generation,US$/1000,yes,Result
+18,Total Capacity,Centralised Generation,MW,yes,Result
+19,Total Capacity,Distributed Generation,MW,yes,Result
+20,TransmissionInput,Transmission,MWyr,yes,Result
+21,TransmissionInvestment,Transmission,US$/1000,yes,Result
+22,TransmissionNewCap,Transmission,MW,yes,Result
+23,TransmissionOutput,Transmission,MWyr,yes,Result
+24,Unserved,Demand,MWyr,yes,Result
+25,Volume,Energy Source,MWyr,yes,Result
+26,Annual bound on production (Upper),All,MWyr,yes,Config
+27,Annual bound on capacity addition (Fixed),All,MW,yes,Config
+28,Annual bound on capacity addition (Upper),All,MW,yes,Config
+29,Bound on total capacity addition (Upper),All,MW,yes,Config
+30,General constraint (CO2),All,pu,no,Config
+31,General constraint (Domestic),All,pu,no,Config
+32,General constraint (PV),All,pu,no,Config
+33,General constraint (Renewable),All,pu,no,Config
+34,General constraint,All,pu,no,Config
+35,General constraint,All,pu,no,Config
+36,General constraint,All,pu,no,Config
+37,General constraint,All,pu,no,Config
+38,General constraint,All,pu,no,Config
+39,General constraint,All,pu,no,Config
+40,General constraint,All,pu,no,Config
+41,General constraint,All,pu,no,Config
+42,General constraint,All,pu,no,Config
+43,General constraint,All,pu,no,Config
+44,General constraint,All,pu,no,Config
+45,General constraint,All,pu,no,Config
+46,General constraint,All,pu,no,Config
+47,General constraint,All,pu,no,Config
+48,General constraint,All,pu,no,Config
+49,General constraint,All,pu,no,Config
+50,General constraint,All,pu,no,Config
+51,General constraint,All,pu,no,Config
+52,General constraint,All,pu,no,Config
+53,General constraint,All,pu,no,Config
+54,General constraint,All,pu,no,Config
+55,General constraint,All,pu,no,Config
+56,General constraint,All,pu,no,Config
+57,General constraint,All,pu,no,Config
+58,General constraint sum,All,pu,no,Config
+59,Construction time,All,year,yes,Config
+60,Fixed O&M cost,All,US$'00/kWyr,yes,Config
+61,First year,All,year,yes,Config
+62,Historical capacity,All,MW,yes,Config
+63,Investment cost,All,US$'00/kW,yes,Config
+64,Main input (Biomass),All,pu,no,Config
+65,Main input (Coal),All,pu,no,Config
+66,Main input (Electricity),All,pu,no,Config
+67,Main input (Electricity),All,pu,no,Config
+68,Main input (Electricity),All,pu,no,Config
+69,Main input (Electricity),All,pu,no,Config
+70,Main input (Electricity),All,pu,no,Config
+71,Main input (Electricity),All,pu,no,Config
+72,Main input (Electricity),All,pu,no,Config
+73,Main input (Electricity),All,pu,no,Config
+74,Main input (Electricity),All,pu,no,Config
+75,Main input (Electricity),All,pu,no,Config
+76,Main input (Electricity),All,pu,no,Config
+77,Main input (Electricity),All,pu,no,Config
+78,Main input (Electricity),All,pu,no,Config
+79,Main input (Electricity),All,pu,no,Config
+80,Main input (Electricity),All,pu,no,Config
+81,Main input (Electricity),All,pu,no,Config
+82,Main input (Electricity),All,pu,no,Config
+83,Main input (Electricity),All,pu,no,Config
+84,Main input (Electricity),All,pu,no,Config
+85,Main input (Electricity),All,pu,no,Config
+86,Main input (Electricity),All,pu,no,Config
+87,Main input (Electricity),All,pu,no,Config
+88,Main input (Electricity),All,pu,no,Config
+89,Main input (Electricity),All,pu,no,Config
+90,Main input (Electricity),All,pu,no,Config
+91,Main input (Gas),All,pu,no,Config
+92,Main input (OHF),All,pu,no,Config
+93,Main input (Industry),All,pu,no,Config
+94,Main input (Nuclear),All,pu,no,Config
+95,Main input (Oil),All,pu,no,Config
+96,Main input (Rural),All,pu,no,Config
+97,Main input (Urban),All,pu,no,Config
+98,Minimum utilization,All,pu,yes,Config
+99,Main output (Biomass),All,pu,yes,Config
+100,Main output (Coal),All,pu,yes,Config
+101,Main output (ElcDummy),All,pu,yes,Config
+102,Main output (ElcDummy),All,pu,yes,Config
+103,Main output (Electricity),All,pu,yes,Config
+104,Main output (Electricity),All,pu,yes,Config
+105,Main output (Electricity),All,pu,yes,Config
+106,Main output (Electricity),All,pu,yes,Config
+107,Main output (Electricity),All,pu,yes,Config
+108,Main output (Electricity),All,pu,yes,Config
+109,Main output (Electricity),All,pu,yes,Config
+110,Main output (Electricity),All,pu,yes,Config
+111,Main output (Electricity),All,pu,yes,Config
+112,Main output (Electricity),All,pu,yes,Config
+113,Main output (Electricity),All,pu,yes,Config
+114,Main output (Electricity),All,pu,yes,Config
+115,Main output (Electricity),All,pu,yes,Config
+116,Main output (Electricity),All,pu,yes,Config
+117,Main output (Electricity),All,pu,yes,Config
+118,Main output (Electricity),All,pu,yes,Config
+119,Main output (Electricity),All,pu,yes,Config
+120,Main output (Electricity),All,pu,yes,Config
+121,Main output (Electricity),All,pu,yes,Config
+122,Main output (Electricity),All,pu,yes,Config
+123,Main output (Electricity),All,pu,yes,Config
+124,Main output (Electricity),All,pu,yes,Config
+125,Main output (Electricity),All,pu,yes,Config
+126,Main output (Electricity),All,pu,yes,Config
+127,Main output (Electricity),All,pu,yes,Config
+128,Main output (Gas),All,pu,yes,Config
+129,Main output (OHF),All,pu,yes,Config
+130,Main output (Industry),All,pu,yes,Config
+131,Main output (Nuclear),All,pu,yes,Config
+132,Main output (Oil),All,pu,yes,Config
+133,Main output (Crude),All,pu,yes,Config
+134,Main output (Rural),All,pu,yes,Config
+135,Main output (Rural),All,pu,yes,Config
+136,Main output (Urban),All,pu,yes,Config
+137,Main output (Urban),All,pu,yes,Config
+138,Operation time,All,pu,yes,Config
+139,Plant factor,All,pu,yes,Config
+140,Plant life,All,year,yes,Config
+141,Variable O&M cost,All,US$'00/kWyr,yes,Config
+142,Demand,All,MWyr,yes,Config

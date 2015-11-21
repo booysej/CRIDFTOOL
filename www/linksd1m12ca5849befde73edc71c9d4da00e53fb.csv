@@ -1,0 +1,12 @@
+"source","target","text","flow"
+"ZA","BW","%flow GWh",270
+"ZM","CD","%flow GWh",1299
+"ZA","LS","%flow GWh",332
+"MZ","MW","%flow GWh",93
+"BW","NA","%flow GWh",1752
+"SZ","ZA","%flow GWh",6187
+"MZ","SZ","%flow GWh",6889
+"ZW","ZM","%flow GWh",7898
+"BW","ZW","%flow GWh",1102
+"MZ","ZW","%flow GWh",4343
+"ZA","ZW","%flow GWh",5259

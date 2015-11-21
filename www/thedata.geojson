@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "ID": "0", "CODE": "AO", "COUNTRY": "Angola" }, "geometry": { "type": "Point", "coordinates": [ 17.575884002771197, -12.340139407690469 ] } },
+{ "type": "Feature", "properties": { "ID": "1", "CODE": "BW", "COUNTRY": "Botswana" }, "geometry": { "type": "Point", "coordinates": [ 23.804809216008728, -22.18913208058774 ] } },
+{ "type": "Feature", "properties": { "ID": "2", "CODE": "BI", "COUNTRY": "Burundi" }, "geometry": { "type": "Point", "coordinates": [ 29.906070834549141, -3.359908047973307 ] } },
+{ "type": "Feature", "properties": { "ID": "3", "CODE": "CD", "COUNTRY": "Democratic Republic of Congo" }, "geometry": { "type": "Point", "coordinates": [ 23.654826551955633, -2.879565586619254 ] } },
+{ "type": "Feature", "properties": { "ID": "4", "CODE": "KE", "COUNTRY": "Kenya" }, "geometry": { "type": "Point", "coordinates": [ 37.848972188431262, 0.525980943127905 ] } },
+{ "type": "Feature", "properties": { "ID": "5", "CODE": "LS", "COUNTRY": "Lesotho" }, "geometry": { "type": "Point", "coordinates": [ 28.240055447311651, -29.57239685793823 ] } },
+{ "type": "Feature", "properties": { "ID": "6", "CODE": "MW", "COUNTRY": "Malawi" }, "geometry": { "type": "Point", "coordinates": [ 33.867204845547967, -13.30491624164288 ] } },
+{ "type": "Feature", "properties": { "ID": "7", "CODE": "MZ", "COUNTRY": "Mozambique" }, "geometry": { "type": "Point", "coordinates": [ 34.543764374885285, -18.74701195181283 ] } },
+{ "type": "Feature", "properties": { "ID": "8", "CODE": "NA", "COUNTRY": "Namibia" }, "geometry": { "type": "Point", "coordinates": [ 17.2286835876683, -22.129430103095618 ] } },
+{ "type": "Feature", "properties": { "ID": "9", "CODE": "RW", "COUNTRY": "Rwanda" }, "geometry": { "type": "Point", "coordinates": [ 29.926667006349387, -2.003922644127329 ] } },
+{ "type": "Feature", "properties": { "ID": "10", "CODE": "ZA", "COUNTRY": "South Africa" }, "geometry": { "type": "Point", "coordinates": [ 22.928548615378322, -29.930871013759404 ] } },
+{ "type": "Feature", "properties": { "ID": "11", "CODE": "SZ", "COUNTRY": "Swaziland" }, "geometry": { "type": "Point", "coordinates": [ 31.499113871426353, -26.555523059314993 ] } },
+{ "type": "Feature", "properties": { "ID": "12", "CODE": "TZ", "COUNTRY": "Tanzania" }, "geometry": { "type": "Point", "coordinates": [ 34.810337301314668, -6.305932988176232 ] } },
+{ "type": "Feature", "properties": { "ID": "13", "CODE": "UG", "COUNTRY": "Uganda" }, "geometry": { "type": "Point", "coordinates": [ 32.392758970264971, 1.289665164395645 ] } },
+{ "type": "Feature", "properties": { "ID": "14", "CODE": "ZM", "COUNTRY": "Zambia" }, "geometry": { "type": "Point", "coordinates": [ 26.448809600863758, -14.525162006812371 ] } },
+{ "type": "Feature", "properties": { "ID": "15", "CODE": "ZW", "COUNTRY": "Zimbabwe" }, "geometry": { "type": "Point", "coordinates": [ 29.871533942779514, -19.013600615688542 ] } }
+]
+}

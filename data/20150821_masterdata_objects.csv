@@ -1,0 +1,718 @@
+id,technology,country.name,level,renewable,energy.source,producing.country,consuming.country,status,name,show
+1,ANrBiomass,Angola,Energy Source,Renewable,Biomass,Angola,Angola,N/A,Biomass,yes
+2,ANrCoal,Angola,Energy Source,Not renewable,Coal,Angola,Angola,N/A,Coal,yes
+3,ANrCoalCCS,Angola,Energy Source,Not renewable,CoalCCS,Angola,Angola,N/A,CoalCCS,yes
+4,ANrCrude,Angola,Energy Source,Not renewable,Crude,Angola,Angola,N/A,Crude,yes
+5,ANrDiesel,Angola,Energy Source,Not renewable,Diesel,Angola,Angola,N/A,Diesel,yes
+6,ANrEBZ,Angola,Demand,N/A,Electricity,Angola,Angola,N/A,Unserved Energy,yes
+7,ANrEDist,Angola,Distribution,N/A,Electricity,Angola,Angola,N/A,Heavy Industry,no
+8,ANrEDistRural,Angola,Distribution,N/A,Electricity,Angola,Angola,N/A,Rural,no
+9,ANrEDistUrban,Angola,Distribution,N/A,Electricity,Angola,Angola,N/A,Urban/Services/Small Industry,no
+10,ANrEInd,Angola,Demand,N/A,Electricity,Angola,Angola,N/A,Heavy Industry,yes
+11,ANrEPBIONU,Angola,Centralised Generation,Renewable,Biomass,Angola,Angola,New Uncommitted,Biomass,yes
+12,ANrEPCOANUSC,Angola,Centralised Generation,Not renewable,Coal,Angola,Angola,New Uncommitted,Supercritical coal,yes
+13,ANrEPCOCNUCCS,Angola,Centralised Generation,Not renewable,Coal,Angola,Angola,New Uncommitted,Supercritical coal w CCS,yes
+14,ANrEPGASEXOC,Angola,Centralised Generation,Not renewable,Gas,Angola,Angola,Existing,SCGT,yes
+15,ANrEPGASNUCC,Angola,Centralised Generation,Not renewable,Gas,Angola,Angola,New Uncommitted,CCGT,yes
+16,ANrEPGASNUOC,Angola,Centralised Generation,Not renewable,Gas,Angola,Angola,New Uncommitted,OCGT,yes
+17,ANrEPGASNUSO,Angola,Centralised Generation,Not renewable,Gas,Angola,Angola,New Uncommitted,Solar thermal with gas co-firing,yes
+18,ANrEPGEONU,Angola,Centralised Generation,Not renewable,Gas,Angola,Angola,New Uncommitted,Geothermal,yes
+19,ANrEPHYDEXHA,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,Existing,High Availability,yes
+20,ANrEPHYDEXLA,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,Existing,Low Availability,yes
+21,ANrEPHYDNCcam,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,New Committed,Cambambe II hydro,yes
+22,ANrEPHYDNCcap,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,New Committed,Capanda II hydro,yes
+23,ANrEPHYDNCgov,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,New Committed,Gove hydro,yes
+24,ANrEPHYDNU,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,New Uncommitted,Hydro,yes
+25,ANrEPHYDNUkba,Angola,Centralised Generation,Renewable,Hydro,Angola,Angola,New Uncommitted,Kuanza Basin,yes
+26,ANrEPHYDNUmic,Angola,Distributed Generation,Renewable,Hydro,Angola,Angola,New Uncommitted,Small Hydro,yes
+27,ANrEPNUCNUPW,Angola,Centralised Generation,Not renewable,Nuclear,Angola,Angola,New Uncommitted,PWR nuclear,yes
+28,ANrEPODSEXOC,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,Existing,Diesel,yes
+29,ANrEPODSNCOCben,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Committed,Benguela Thermal,yes
+30,ANrEPODSNCOCdie,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Committed,Diesels,yes
+31,ANrEPODSNCOCt12,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Committed,TG-12.5,yes
+32,ANrEPODSNCOCt20,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Committed,TG-20,yes
+33,ANrEPODSNU,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,Diesel,yes
+34,ANrEPODSNUind,Angola,Distributed Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,Diesel 100 kW system (industry),yes
+35,ANrEPODSNUOCt40,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,TG-40,yes
+36,ANrEPODSNUOCt60,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,TG-60,yes
+37,ANrEPODSNUrur,Angola,Distributed Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+38,ANrEPODSNUurb,Angola,Distributed Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+39,ANrEPOHFNU,Angola,Centralised Generation,Not renewable,Oil,Angola,Angola,New Uncommitted,HFO,yes
+40,ANrEPSOLNUPVrt,Angola,Distributed Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,Solar PV (roof top - urban),yes
+41,ANrEPSOLNUPVrtru,Angola,Distributed Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,Solar PV (roof top - rural),yes
+42,ANrEPSOLNUPVst,Angola,Distributed Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+43,ANrEPSOLNUPVst2,Angola,Distributed Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+44,ANrEPSOLNUPVstru,Angola,Distributed Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+45,ANrEPSOLNUPVstru2,Angola,Distributed Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+46,ANrEPSOLNUPVut,Angola,Centralised Generation,Renewable,Solar PV,Angola,Angola,New Uncommitted,Solar PV (utility),yes
+47,ANrEPTSONUTH,Angola,Centralised Generation,Renewable,Solar Thermal,Angola,Angola,New Uncommitted,Solar thermal no storage,yes
+48,ANrEPTSONUTHst,Angola,Centralised Generation,Renewable,Solar Thermal,Angola,Angola,New Uncommitted,Solar thermal with Storage,yes
+49,ANrEPWNDNU25,Angola,Centralised Generation,Renewable,Wind,Angola,Angola,New Uncommitted,Bulk Wind (20% CF),yes
+50,ANrEPWNDNU30,Angola,Centralised Generation,Renewable,Wind,Angola,Angola,New Uncommitted,Bulk Wind (30% CF),yes
+51,ANrERural,Angola,Demand,N/A,Electricity,Angola,Angola,N/A,Rural,yes
+52,ANrETrans,Angola,Transmission (local),N/A,Electricity,Angola,Angola,N/A,Local,no
+53,ANrEUrban,Angola,Demand,N/A,Electricity,Angola,Angola,N/A,Urban/Services/Small Industry,yes
+54,ANrEXelc,Angola,Export,N/A,Electricity,Angola,Angola,N/A,Electricity Export,no
+55,ANrGas,Angola,Energy Source,Not renewable,Gas,Angola,Angola,N/A,Gas,yes
+56,ANrIMIelc,Angola,Import,N/A,Electricity,Angola,Angola,N/A,Electricity Import,no
+57,ANrNuclear,Angola,Energy Source,Not renewable,Nuclear,Angola,Angola,N/A,Nuclear,yes
+58,ANrOHF,Angola,Energy Source,Not renewable,OHF,Angola,Angola,N/A,OHF,yes
+59,ANrOil,Angola,Energy Source,Not renewable,Oil,Angola,Angola,N/A,Oil,yes
+60,BOrBiomass,Botswana,Energy Source,Renewable,Biomass,Botswana,Botswana,N/A,Biomass,yes
+61,BOrCoal,Botswana,Energy Source,Not renewable,Coal,Botswana,Botswana,N/A,Coal,yes
+62,BOrCoalCCS,Botswana,Energy Source,Not renewable,CoalCCS,Botswana,Botswana,N/A,CoalCCS,yes
+63,BOrCrude,Botswana,Energy Source,Not renewable,Crude,Botswana,Botswana,N/A,Crude,yes
+64,BOrDiesel,Botswana,Energy Source,Not renewable,Diesel,Botswana,Botswana,N/A,Diesel,yes
+65,BOrEBZ,Botswana,Demand,N/A,Electricity,Botswana,Botswana,N/A,Unserved Energy,yes
+66,BOrEDist,Botswana,Distribution,N/A,Electricity,Botswana,Botswana,N/A,Heavy Industry,no
+67,BOrEDistRural,Botswana,Distribution,N/A,Electricity,Botswana,Botswana,N/A,Rural,no
+68,BOrEDistUrban,Botswana,Distribution,N/A,Electricity,Botswana,Botswana,N/A,Urban/Services/Small Industry,no
+69,BOrEInd,Botswana,Demand,N/A,Electricity,Botswana,Botswana,N/A,Heavy Industry,yes
+70,BOrEPBIONU,Botswana,Centralised Generation,Renewable,Biomass,Botswana,Botswana,New Uncommitted,Biomass,yes
+71,BOrEPCOAEXPF,Botswana,Centralised Generation,Not renewable,Coal,Botswana,Botswana,Existing,Morupule,yes
+72,BOrEPCOANUSC,Botswana,Centralised Generation,Not renewable,Coal,Botswana,Botswana,New Uncommitted,Supercritical coal,yes
+73,BOrEPCOANUSCmma,Botswana,Centralised Generation,Not renewable,Coal,Botswana,Botswana,New Uncommitted,Mmamabula coal,yes
+74,BOrEPCOANUSCmor,Botswana,Centralised Generation,Not renewable,Coal,Botswana,Botswana,New Uncommitted,Morupule B coal,yes
+75,BOrEPCOCNUCCS,Botswana,Centralised Generation,Not renewable,Coal,Botswana,Botswana,New Uncommitted,Supercritical coal w CCS,yes
+76,BOrEPGASNUCC,Botswana,Centralised Generation,Not renewable,Gas,Botswana,Botswana,New Uncommitted,CCGT,yes
+77,BOrEPGASNUOC,Botswana,Centralised Generation,Not renewable,Gas,Botswana,Botswana,New Uncommitted,OCGT,yes
+78,BOrEPGASNUSO,Botswana,Centralised Generation,Not renewable,Gas,Botswana,Botswana,New Uncommitted,Solar thermal with gas co-firing,yes
+79,BOrEPGEONU,Botswana,Centralised Generation,Not renewable,Gas,Botswana,Botswana,New Uncommitted,Geothermal,yes
+80,BOrEPHYDNU,Botswana,Centralised Generation,Renewable,Hydro,Botswana,Botswana,New Uncommitted,Hydro,yes
+81,BOrEPHYDNUmic,Botswana,Distributed Generation,Renewable,Hydro,Botswana,Botswana,New Uncommitted,Small Hydro,yes
+82,BOrEPNUCNUPW,Botswana,Centralised Generation,Not renewable,Nuclear,Botswana,Botswana,New Uncommitted,PWR nuclear,yes
+83,BOrEPODSNU,Botswana,Centralised Generation,Not renewable,Oil,Botswana,Botswana,New Uncommitted,Diesel,yes
+84,BOrEPODSNUind,Botswana,Distributed Generation,Not renewable,Oil,Botswana,Botswana,New Uncommitted,Diesel 100 kW system (industry),yes
+85,BOrEPODSNUrur,Botswana,Distributed Generation,Not renewable,Oil,Botswana,Botswana,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+86,BOrEPODSNUurb,Botswana,Distributed Generation,Not renewable,Oil,Botswana,Botswana,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+87,BOrEPOHFNU,Botswana,Centralised Generation,Not renewable,Oil,Botswana,Botswana,New Uncommitted,HFO,yes
+88,BOrEPSOLNUPVrt,Botswana,Distributed Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,Solar PV (roof top - urban),yes
+89,BOrEPSOLNUPVrtru,Botswana,Distributed Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,Solar PV (roof top - rural),yes
+90,BOrEPSOLNUPVst,Botswana,Distributed Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+91,BOrEPSOLNUPVst2,Botswana,Distributed Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+92,BOrEPSOLNUPVstru,Botswana,Distributed Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+93,BOrEPSOLNUPVstru2,Botswana,Distributed Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+94,BOrEPSOLNUPVut,Botswana,Centralised Generation,Renewable,Solar PV,Botswana,Botswana,New Uncommitted,Solar PV (utility),yes
+95,BOrEPTSONUTH,Botswana,Centralised Generation,Renewable,Solar Thermal,Botswana,Botswana,New Uncommitted,Solar thermal no storage,yes
+96,BOrEPTSONUTHst,Botswana,Centralised Generation,Renewable,Solar Thermal,Botswana,Botswana,New Uncommitted,Solar thermal with Storage,yes
+97,BOrEPWNDNU25,Botswana,Centralised Generation,Renewable,Wind,Botswana,Botswana,New Uncommitted,Bulk Wind (20% CF),yes
+98,BOrEPWNDNU30,Botswana,Centralised Generation,Renewable,Wind,Botswana,Botswana,New Uncommitted,Bulk Wind (30% CF),yes
+99,BOrERural,Botswana,Demand,N/A,Electricity,Botswana,Botswana,N/A,Rural,yes
+100,BOrETrans,Botswana,Transmission (local),N/A,Electricity,Botswana,Botswana,N/A,Local,no
+101,BOrEUrban,Botswana,Demand,N/A,Electricity,Botswana,Botswana,N/A,Urban/Services/Small Industry,yes
+102,BOrEXelc,Botswana,Export,N/A,Electricity,Botswana,Botswana,N/A,Electricity Export,no
+103,BOrGas,Botswana,Energy Source,Not renewable,Gas,Botswana,Botswana,N/A,Gas,yes
+104,BOrIMIelc,Botswana,Import,N/A,Electricity,Botswana,Botswana,N/A,Electricity Import,no
+105,BOrNuclear,Botswana,Energy Source,Not renewable,Nuclear,Botswana,Botswana,N/A,Nuclear,yes
+106,BOrOHF,Botswana,Energy Source,Not renewable,OHF,Botswana,Botswana,N/A,OHF,yes
+107,BOrOil,Botswana,Energy Source,Not renewable,Oil,Botswana,Botswana,N/A,Oil,yes
+108,DRrBiomass,DRC,Energy Source,Renewable,Biomass,DRC,DRC,N/A,Biomass,yes
+109,DRrCoal,DRC,Energy Source,Not renewable,Coal,DRC,DRC,N/A,Coal,yes
+110,DRrCoalCCS,Democratic Republic of Congo,Energy Source,Not renewable,CoalCCS,Democratic Republic of Congo,Democratic Republic of Congo,N/A,CoalCCS,yes
+111,DRrCrude,DRC,Energy Source,Not renewable,Crude,DRC,DRC,N/A,Crude,yes
+112,DRrDiesel,Democratic Republic of Congo,Energy Source,Not renewable,Diesel,Democratic Republic of Congo,Democratic Republic of Congo,N/A,Diesel,yes
+113,DRrEBZ,DRC,Demand,N/A,Electricity,DRC,DRC,N/A,Unserved Energy,yes
+114,DRrEDist,DRC,Distribution,N/A,Electricity,DRC,DRC,N/A,Heavy Industry,no
+115,DRrEDistRural,DRC,Distribution,N/A,Electricity,DRC,DRC,N/A,Rural,no
+116,DRrEDistUrban,DRC,Distribution,N/A,Electricity,DRC,DRC,N/A,Urban/Services/Small Industry,no
+117,DRrEInd,DRC,Demand,N/A,Electricity,DRC,DRC,N/A,Heavy Industry,yes
+118,DRrEPBIONU,DRC,Centralised Generation,Renewable,Biomass,DRC,DRC,New Uncommitted,Biomass,yes
+119,DRrEPCOANUSC,DRC,Centralised Generation,Not renewable,Coal,DRC,DRC,New Uncommitted,Supercritical coal,yes
+120,DRrEPGASNUCC,DRC,Centralised Generation,Not renewable,Gas,DRC,DRC,New Uncommitted,CCGT,yes
+121,DRrEPGASNUOC,DRC,Centralised Generation,Not renewable,Gas,DRC,DRC,New Uncommitted,OCGT,yes
+122,DRrEPGASNUSO,DRC,Centralised Generation,Not renewable,Gas,DRC,DRC,New Uncommitted,Solar thermal with gas co-firing,yes
+123,DRrEPGEONU,DRC,Centralised Generation,Not renewable,Gas,DRC,DRC,New Uncommitted,Geothermal,yes
+124,DRrEPHYDEXHA,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,Existing,High Availability,yes
+125,DRrEPHYDEXinga,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,Existing,Inga,yes
+126,DRrEPHYDEXLA,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,Existing,Low Availability,yes
+127,DRrEPHYDNU,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,New Uncommitted,Hydro,yes
+128,DRrEPHYDNUmic,DRC,Distributed Generation,Renewable,Hydro,DRC,DRC,New Uncommitted,Small Hydro,yes
+129,DRrEPHYDUCbus,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,UC,Busanga hydro,yes
+130,DRrEPHYDUCgin,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,UC,Grand Inga,yes
+131,DRrEPHYDUCin3,DRC,Centralised Generation,Renewable,Hydro,DRC,DRC,UC,Inga 3 hydro,yes
+132,DRrEPNUCNUPW,DRC,Centralised Generation,Not renewable,Nuclear,DRC,DRC,New Uncommitted,PWR nuclear,yes
+133,DRrEPODSNU,DRC,Centralised Generation,Not renewable,Oil,DRC,DRC,New Uncommitted,Diesel,yes
+134,DRrEPODSNUind,DRC,Distributed Generation,Not renewable,Oil,DRC,DRC,New Uncommitted,Diesel 100 kW system (industry),yes
+135,DRrEPODSNUrur,DRC,Distributed Generation,Not renewable,Oil,DRC,DRC,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+136,DRrEPODSNUurb,DRC,Distributed Generation,Not renewable,Oil,DRC,DRC,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+137,DRrEPOHFNU,DRC,Centralised Generation,Not renewable,Oil,DRC,DRC,New Uncommitted,HFO,yes
+138,DRrEPSOLNUPVrt,DRC,Distributed Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,Solar PV (roof top - urban),yes
+139,DRrEPSOLNUPVrtru,DRC,Distributed Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,Solar PV (roof top - rural),yes
+140,DRrEPSOLNUPVst,DRC,Distributed Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+141,DRrEPSOLNUPVst2,DRC,Distributed Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+142,DRrEPSOLNUPVstru,DRC,Distributed Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+143,DRrEPSOLNUPVstru2,DRC,Distributed Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+144,DRrEPSOLNUPVut,DRC,Centralised Generation,Renewable,Solar PV,DRC,DRC,New Uncommitted,Solar PV (utility),yes
+145,DRrEPTSONUTH,DRC,Centralised Generation,Renewable,Solar Thermal,DRC,DRC,New Uncommitted,Solar thermal no storage,yes
+146,DRrEPTSONUTHst,DRC,Centralised Generation,Renewable,Solar Thermal,DRC,DRC,New Uncommitted,Solar thermal with Storage,yes
+147,DRrEPWNDNU25,DRC,Centralised Generation,Renewable,Wind,DRC,DRC,New Uncommitted,Bulk Wind (20% CF),yes
+148,DRrEPWNDNU30,DRC,Centralised Generation,Renewable,Wind,DRC,DRC,New Uncommitted,Bulk Wind (30% CF),yes
+149,DRrERural,DRC,Demand,N/A,Electricity,DRC,DRC,N/A,Rural,yes
+150,DRrETrans,DRC,Transmission (local),N/A,Electricity,DRC,DRC,N/A,Local,no
+151,DRrEUrban,DRC,Demand,N/A,Electricity,DRC,DRC,N/A,Urban/Services/Small Industry,yes
+152,DRrEXelc,DRC,Export,N/A,Electricity,DRC,DRC,N/A,Electricity Export,no
+153,DRrGas,DRC,Energy Source,Not renewable,Gas,DRC,DRC,N/A,Gas,yes
+154,DRrIMIelc,DRC,Import,N/A,Electricity,DRC,DRC,N/A,Electricity Import,no
+155,DRrNuclear,Democratic Republic of Congo,Energy Source,Not renewable,Nuclear,Democratic Republic of Congo,Democratic Republic of Congo,N/A,Nuclear,yes
+156,DRrOHF,DRC,Energy Source,Not renewable,OHF,DRC,DRC,N/A,OHF,yes
+157,DRrOil,DRC,Energy Source,Not renewable,Oil,DRC,DRC,N/A,Oil,yes
+158,ELEXBOrSAr,South Africa,Transmission,N/A,Electricity,Botswana,South Africa,Existing,Botswana-South Africa,yes
+159,ELEXBOrZIr,Zimbabwe,Transmission,N/A,Electricity,Botswana,Zimbabwe,Existing,Botswana-Zimbabwe,yes
+160,ELEXDRrZAr,Zambia,Transmission,N/A,Electricity,Democratic Republic of Congo,Zambia,Existing,Democratic Republic of Congo-Zambia,yes
+161,ELEXLErSAr,South Africa,Transmission,N/A,Electricity,Lesotho,South Africa,Existing,Lesotho-South Africa,yes
+162,ELEXMOrSAr,South Africa,Transmission,N/A,Electricity,Mozambique,South Africa,Existing,Mozambique-South Africa,yes
+163,ELEXMOrSWr,Swaziland,Transmission,N/A,Electricity,Mozambique,Swaziland,Existing,Mozambique-Swaziland,yes
+164,ELEXMOrZIr,Zimbabwe,Transmission,N/A,Electricity,Mozambique,Zimbabwe,Existing,Mozambique-Zimbabwe,yes
+165,ELEXNArSAr,South Africa,Transmission,N/A,Electricity,Namibia,South Africa,Existing,Namibia-South Africa,yes
+166,ELEXSArBOr,Botswana,Transmission,N/A,Electricity,South Africa,Botswana,Existing,South Africa-Botswana,yes
+167,ELEXSArLEr,Lesotho,Transmission,N/A,Electricity,South Africa,Lesotho,Existing,South Africa-Lesotho,yes
+168,ELEXSArMOr,Mozambique,Transmission,N/A,Electricity,South Africa,Mozambique,Existing,South Africa-Mozambique,yes
+169,ELEXSArNAr,Namibia,Transmission,N/A,Electricity,South Africa,Namibia,Existing,South Africa-Namibia,yes
+170,ELEXSArSWr,Swaziland,Transmission,N/A,Electricity,South Africa,Swaziland,Existing,South Africa-Swaziland,yes
+171,ELEXSArZIr,Zimbabwe,Transmission,N/A,Electricity,South Africa,Zimbabwe,Existing,South Africa-Zimbabwe,yes
+172,ELEXSWrMOr,Mozambique,Transmission,N/A,Electricity,Swaziland,Mozambique,Existing,Swaziland-Mozambique,yes
+173,ELEXSWrSAr,South Africa,Transmission,N/A,Electricity,Swaziland,South Africa,Existing,Swaziland-South Africa,yes
+174,ELEXZArDRr,DRC,Transmission,N/A,Electricity,Zambia,Democratic Republic of Congo,Existing,Zambia-Democratic Republic of Congo,yes
+175,ELEXZArZIr,Zimbabwe,Transmission,N/A,Electricity,Zambia,Zimbabwe,Existing,Zambia-Zimbabwe,yes
+176,ELEXZIrBOr,Botswana,Transmission,N/A,Electricity,Zimbabwe,Botswana,Existing,Zimbabwe-Botswana,yes
+177,ELEXZIrMOr,Mozambique,Transmission,N/A,Electricity,Zimbabwe,Mozambique,Existing,Zimbabwe-Mozambique,yes
+178,ELEXZIrSAr,South Africa,Transmission,N/A,Electricity,Zimbabwe,South Africa,Existing,Zimbabwe-South Africa,yes
+179,ELEXZIrZAr,Zambia,Transmission,N/A,Electricity,Zimbabwe,Zambia,Existing,Zimbabwe-Zambia,yes
+180,ELNCzizBOrNAr,Namibia,Transmission,N/A,Electricity,Botswana,Namibia,New Committed,Botswana-Namibia,yes
+181,ELNCzizBOrZIr,Zimbabwe,Transmission,N/A,Electricity,Botswana,Zimbabwe,New Committed,Botswana-Zimbabwe,yes
+182,ELNCzizNArBOr,Botswana,Transmission,N/A,Electricity,Namibia,Botswana,New Committed,Namibia-Botswana,yes
+183,ELNCzizNArZAr,Zambia,Transmission,N/A,Electricity,Namibia,Zambia,New Committed,Namibia-Zambia,yes
+184,ELNCzizNArZIr,Zimbabwe,Transmission,N/A,Electricity,Namibia,Zimbabwe,New Committed,Namibia-Zimbabwe,yes
+185,ELNCzizZArNAr,Namibia,Transmission,N/A,Electricity,Zambia,Namibia,New Committed,Zambia-Namibia,yes
+186,ELNCzizZArZIr,Zimbabwe,Transmission,N/A,Electricity,Zambia,Zimbabwe,New Committed,Zambia-Zimbabwe,yes
+187,ELNCzizZIrBOr,Botswana,Transmission,N/A,Electricity,Zimbabwe,Botswana,New Committed,Zimbabwe-Botswana,yes
+188,ELNCzizZIrNAr,Namibia,Transmission,N/A,Electricity,Zimbabwe,Namibia,New Committed,Zimbabwe-Namibia,yes
+189,ELNCzizZIrZAr,Zambia,Transmission,N/A,Electricity,Zimbabwe,Zambia,New Committed,Zimbabwe-Zambia,yes
+190,ELNU765DRrZAr,Zambia,Transmission,N/A,Electricity,Democratic Republic of Congo,Zambia,New Uncommitted,Democratic Republic of Congo-Zambia,yes
+191,ELNU765NArZIr,Zimbabwe,Transmission,N/A,Electricity,Namibia,Zimbabwe,New Uncommitted,Namibia-Zimbabwe,yes
+192,ELNU765SArZIr,Zimbabwe,Transmission,N/A,Electricity,South Africa,Zimbabwe,New Uncommitted,South Africa-Zimbabwe,yes
+193,ELNU765ZArDRr,DRC,Transmission,N/A,Electricity,Zambia,Democratic Republic of Congo,New Uncommitted,Zambia-Democratic Republic of Congo,yes
+194,ELNU765ZArZIr,Zimbabwe,Transmission,N/A,Electricity,Zambia,Zimbabwe,New Uncommitted,Zambia-Zimbabwe,yes
+195,ELNU765ZIrNAr,Namibia,Transmission,N/A,Electricity,Zimbabwe,Namibia,New Uncommitted,Zimbabwe-Namibia,yes
+196,ELNU765ZIrSAr,South Africa,Transmission,N/A,Electricity,Zimbabwe,South Africa,New Uncommitted,Zimbabwe-South Africa,yes
+197,ELNU765ZIrZAr,Zambia,Transmission,N/A,Electricity,Zimbabwe,Zambia,New Uncommitted,Zimbabwe-Zambia,yes
+198,ELNUothANrDRr,DRC,Transmission,N/A,Electricity,Angola,Democratic Republic of Congo,New Uncommitted,Angola-Democratic Republic of Congo,yes
+199,ELNUothAnrNAr,Namibia,Transmission,N/A,Electricity,Angola,Namibia,New Uncommitted,Angola-Namibia,yes
+200,ELNUothBOrSAr,South Africa,Transmission,N/A,Electricity,Botswana,South Africa,New Uncommitted,Botswana-South Africa,yes
+201,ELNUothDRrANr,Angola,Transmission,N/A,Electricity,Democratic Republic of Congo,Angola,New Uncommitted,Democratic Republic of Congo-Angola,yes
+202,ELNUothDRrZAr,Zambia,Transmission,N/A,Electricity,Democratic Republic of Congo,Zambia,New Uncommitted,Democratic Republic of Congo-Zambia,yes
+203,ELNUothLErSAr,South Africa,Transmission,N/A,Electricity,Lesotho,South Africa,New Uncommitted,Lesotho-South Africa,yes
+204,ELNUothMArMOrpm,Mozambique,Transmission,N/A,Electricity,Malawi,Mozambique,New Uncommitted,Malawi-Mozambique,yes
+205,ELNUothMArMOrps,Mozambique,Transmission,N/A,Electricity,Malawi,Mozambique,New Uncommitted,Malawi-Mozambique,yes
+206,ELNUothMArZAr,Zambia,Transmission,N/A,Electricity,Malawi,Zambia,New Uncommitted,Malawi-Zambia,yes
+207,ELNUothMOrMArpm,Malawi,Transmission,N/A,Electricity,Mozambique,Malawi,New Uncommitted,Mozambique-Malawi,yes
+208,ELNUothMOrMArps,Malawi,Transmission,N/A,Electricity,Mozambique,Malawi,New Uncommitted,Mozambique-Malawi,yes
+209,ELNUothMOrSAr,South Africa,Transmission,N/A,Electricity,Mozambique,South Africa,New Uncommitted,Mozambique-South Africa,yes
+210,ELNUothMOrZIr,Zimbabwe,Transmission,N/A,Electricity,Mozambique,Zimbabwe,New Uncommitted,Mozambique-Zimbabwe,yes
+211,ELNUothNArAnr,Angola,Transmission,N/A,Electricity,Namibia,Angola,New Uncommitted,Namibia-Angola,yes
+212,ELNUothNArSAr,South Africa,Transmission,N/A,Electricity,Namibia,South Africa,New Uncommitted,Namibia-South Africa,yes
+213,ELNUothSArBOr,Botswana,Transmission,N/A,Electricity,South Africa,Botswana,New Uncommitted,South Africa-Botswana,yes
+214,ELNUothSArLEr,Lesotho,Transmission,N/A,Electricity,South Africa,Lesotho,New Uncommitted,South Africa-Lesotho,yes
+215,ELNUothSArMOr,Mozambique,Transmission,N/A,Electricity,South Africa,Mozambique,New Uncommitted,South Africa-Mozambique,yes
+216,ELNUothSArNAr,Namibia,Transmission,N/A,Electricity,South Africa,Namibia,New Uncommitted,South Africa-Namibia,yes
+217,ELNUothSArSWr,Swaziland,Transmission,N/A,Electricity,South Africa,Swaziland,New Uncommitted,South Africa-Swaziland,yes
+218,ELNUothSArZIr,Zimbabwe,Transmission,N/A,Electricity,South Africa,Zimbabwe,New Uncommitted,South Africa-Zimbabwe,yes
+219,ELNUothSWrSAr,South Africa,Transmission,N/A,Electricity,Swaziland,South Africa,New Uncommitted,Swaziland-South Africa,yes
+220,ELNUothTArZAr,Zambia,Transmission,N/A,Electricity,Tanzania,Zambia,New Uncommitted,Tanzania-Zambia,yes
+221,ELNUothZArDRr,DRC,Transmission,N/A,Electricity,Zambia,Democratic Republic of Congo,New Uncommitted,Zambia-Democratic Republic of Congo,yes
+222,ELNUothZArMAr,Malawi,Transmission,N/A,Electricity,Zambia,Malawi,New Uncommitted,Zambia-Malawi,yes
+223,ELNUothZArTAr,Tanzania,Transmission,N/A,Electricity,Zambia,Tanzania,New Uncommitted,Zambia-Tanzania,yes
+224,ELNUothZIrMOr,Mozambique,Transmission,N/A,Electricity,Zimbabwe,Mozambique,New Uncommitted,Zimbabwe-Mozambique,yes
+225,ELNUothZIrSAr,South Africa,Transmission,N/A,Electricity,Zimbabwe,South Africa,New Uncommitted,Zimbabwe-South Africa,yes
+226,ELNUwesANrBOr,Botswana,Transmission,N/A,Electricity,Angola,Botswana,New Uncommitted,Angola-Botswana,yes
+227,ELNUwesANrDRr,DRC,Transmission,N/A,Electricity,Angola,Democratic Republic of Congo,New Uncommitted,Angola-Democratic Republic of Congo,yes
+228,ELNUwesBOrANr,Angola,Transmission,N/A,Electricity,Botswana,Angola,New Uncommitted,Botswana-Angola,yes
+229,ELNUwesBOrSAr,South Africa,Transmission,N/A,Electricity,Botswana,South Africa,New Uncommitted,Botswana-South Africa,yes
+230,ELNUwesDRrANr,Angola,Transmission,N/A,Electricity,Democratic Republic of Congo,Angola,New Uncommitted,Democratic Republic of Congo-Angola,yes
+231,ELNUwesDRrNAr,Namibia,Transmission,N/A,Electricity,Democratic Republic of Congo,Namibia,New Uncommitted,Democratic Republic of Congo-Namibia,yes
+232,ELNUwesNArDRr,DRC,Transmission,N/A,Electricity,Namibia,Democratic Republic of Congo,New Uncommitted,Namibia-Democratic Republic of Congo,yes
+233,ELNUwesNArSAr,South Africa,Transmission,N/A,Electricity,Namibia,South Africa,New Uncommitted,Namibia-South Africa,yes
+234,ELNUwesSArBOr,Botswana,Transmission,N/A,Electricity,South Africa,Botswana,New Uncommitted,South Africa-Botswana,yes
+235,ELNUwesSArNAr,Namibia,Transmission,N/A,Electricity,South Africa,Namibia,New Uncommitted,South Africa-Namibia,yes
+236,LErBiomass,Lesotho,Energy Source,Renewable,Biomass,Lesotho,Lesotho,N/A,Biomass,yes
+237,LErCoal,Lesotho,Energy Source,Not renewable,Coal,Lesotho,Lesotho,N/A,Coal,yes
+238,LErCoalCCS,Lesotho,Energy Source,Not renewable,CoalCCS,Lesotho,Lesotho,N/A,CoalCCS,yes
+239,LErCrude,Lesotho,Energy Source,Not renewable,Crude,Lesotho,Lesotho,N/A,Crude,yes
+240,LErDiesel,Lesotho,Energy Source,Not renewable,Diesel,Lesotho,Lesotho,N/A,Diesel,yes
+241,LErEBZ,Lesotho,Demand,N/A,Electricity,Lesotho,Lesotho,N/A,Unserved Energy,yes
+242,LErEDist,Lesotho,Distribution,N/A,Electricity,Lesotho,Lesotho,N/A,Heavy Industry,no
+243,LErEDistRural,Lesotho,Distribution,N/A,Electricity,Lesotho,Lesotho,N/A,Rural,no
+244,LErEDistUrban,Lesotho,Distribution,N/A,Electricity,Lesotho,Lesotho,N/A,Urban/Services/Small Industry,no
+245,LErEInd,Lesotho,Demand,N/A,Electricity,Lesotho,Lesotho,N/A,Heavy Industry,yes
+246,LErEPBIONU,Lesotho,Centralised Generation,Renewable,Biomass,Lesotho,Lesotho,New Uncommitted,Biomass,yes
+247,LErEPCOANUSC,Lesotho,Centralised Generation,Not renewable,Coal,Lesotho,Lesotho,New Uncommitted,Supercritical coal,yes
+248,LErEPGASNUCC,Lesotho,Centralised Generation,Not renewable,Gas,Lesotho,Lesotho,New Uncommitted,CCGT,yes
+249,LErEPGASNUOC,Lesotho,Centralised Generation,Not renewable,Gas,Lesotho,Lesotho,New Uncommitted,OCGT,yes
+250,LErEPGASNUSO,Lesotho,Centralised Generation,Not renewable,Gas,Lesotho,Lesotho,New Uncommitted,Solar thermal with gas co-firing,yes
+251,LErEPGEONU,Lesotho,Centralised Generation,Not renewable,Gas,Lesotho,Lesotho,New Uncommitted,Geothermal,yes
+252,LErEPHYDEX,Lesotho,Centralised Generation,Renewable,Hydro,Lesotho,Lesotho,Existing,Existing hydro,yes
+253,LErEPHYDNU,Lesotho,Centralised Generation,Renewable,Hydro,Lesotho,Lesotho,New Uncommitted,Hydro,yes
+254,LErEPHYDNUmic,Lesotho,Distributed Generation,Renewable,Hydro,Lesotho,Lesotho,New Uncommitted,Small Hydro,yes
+255,LErEPHYDNUmu2,Lesotho,Centralised Generation,Renewable,Hydro,Lesotho,Lesotho,New Uncommitted,Muela 2 hydro,yes
+256,LErEPHYDNUoxb,Lesotho,Centralised Generation,Renewable,Hydro,Lesotho,Lesotho,New Uncommitted,Oxbow hydro,yes
+257,LErEPNUCNUPW,Lesotho,Centralised Generation,Not renewable,Nuclear,Lesotho,Lesotho,New Uncommitted,PWR nuclear,yes
+258,LErEPODSNU,Lesotho,Centralised Generation,Not renewable,Oil,Lesotho,Lesotho,New Uncommitted,Diesel,yes
+259,LErEPODSNUind,Lesotho,Distributed Generation,Not renewable,Oil,Lesotho,Lesotho,New Uncommitted,Diesel 100 kW system (industry),yes
+260,LErEPODSNUrur,Lesotho,Distributed Generation,Not renewable,Oil,Lesotho,Lesotho,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+261,LErEPODSNUurb,Lesotho,Distributed Generation,Not renewable,Oil,Lesotho,Lesotho,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+262,LErEPOHFNU,Lesotho,Centralised Generation,Not renewable,Oil,Lesotho,Lesotho,New Uncommitted,HFO,yes
+263,LErEPSOLNUPVrt,Lesotho,Distributed Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,Solar PV (roof top - urban),yes
+264,LErEPSOLNUPVrtru,Lesotho,Distributed Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,Solar PV (roof top - rural),yes
+265,LErEPSOLNUPVst,Lesotho,Distributed Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+266,LErEPSOLNUPVst2,Lesotho,Distributed Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+267,LErEPSOLNUPVstru,Lesotho,Distributed Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+268,LErEPSOLNUPVstru2,Lesotho,Distributed Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+269,LErEPSOLNUPVut,Lesotho,Centralised Generation,Renewable,Solar PV,Lesotho,Lesotho,New Uncommitted,Solar PV (utility),yes
+270,LErEPTSONUTH,Lesotho,Centralised Generation,Renewable,Solar Thermal,Lesotho,Lesotho,New Uncommitted,Solar thermal no storage,yes
+271,LErEPTSONUTHst,Lesotho,Centralised Generation,Renewable,Solar Thermal,Lesotho,Lesotho,New Uncommitted,Solar thermal with Storage,yes
+272,LErEPWNDNU25,Lesotho,Centralised Generation,Renewable,Wind,Lesotho,Lesotho,New Uncommitted,Bulk Wind (20% CF),yes
+273,LErEPWNDNU30,Lesotho,Centralised Generation,Renewable,Wind,Lesotho,Lesotho,New Uncommitted,Bulk Wind (30% CF),yes
+274,LErERural,Lesotho,Demand,N/A,Electricity,Lesotho,Lesotho,N/A,Rural,yes
+275,LErETrans,Lesotho,Transmission (local),N/A,Electricity,Lesotho,Lesotho,N/A,Local,no
+276,LErEUrban,Lesotho,Demand,N/A,Electricity,Lesotho,Lesotho,N/A,Urban/Services/Small Industry,yes
+277,LErEXelc,Lesotho,Export,N/A,Electricity,Lesotho,Lesotho,N/A,Electricity Export,no
+278,LErGas,Lesotho,Energy Source,Not renewable,Gas,Lesotho,Lesotho,N/A,Gas,yes
+279,LErIMIelc,Lesotho,Import,N/A,Electricity,Lesotho,Lesotho,N/A,Electricity Import,no
+280,LErNuclear,Lesotho,Energy Source,Not renewable,Nuclear,Lesotho,Lesotho,N/A,Nuclear,yes
+281,LErOHF,Lesotho,Energy Source,Not renewable,OHF,Lesotho,Lesotho,N/A,OHF,yes
+282,LErOil,Lesotho,Energy Source,Not renewable,Oil,Lesotho,Lesotho,N/A,Oil,yes
+283,MAINDemTech,MAIN,not found,N/A,Electricity,MAIN,MAIN,N/A,Err:512,no
+284,MArBiomass,Malawi,Energy Source,Renewable,Biomass,Malawi,Malawi,N/A,Biomass,yes
+285,MArCoal,Malawi,Energy Source,Not renewable,Coal,Malawi,Malawi,N/A,Coal,yes
+286,MArCoalCCS,Malawi,Energy Source,Not renewable,CoalCCS,Malawi,Malawi,N/A,CoalCCS,yes
+287,MArCrude,Malawi,Energy Source,Not renewable,Crude,Malawi,Malawi,N/A,Crude,yes
+288,MArDiesel,Malawi,Energy Source,Not renewable,Diesel,Malawi,Malawi,N/A,Diesel,yes
+289,MArEBZ,Malawi,Demand,N/A,Electricity,Malawi,Malawi,N/A,Unserved Energy,yes
+290,MArEDist,Malawi,Distribution,N/A,Electricity,Malawi,Malawi,N/A,Heavy Industry,no
+291,MArEDistRural,Malawi,Distribution,N/A,Electricity,Malawi,Malawi,N/A,Rural,no
+292,MArEDistUrban,Malawi,Distribution,N/A,Electricity,Malawi,Malawi,N/A,Urban/Services/Small Industry,no
+293,MArEInd,Malawi,Demand,N/A,Electricity,Malawi,Malawi,N/A,Heavy Industry,yes
+294,MArEPBIONU,Malawi,Centralised Generation,Renewable,Biomass,Malawi,Malawi,New Uncommitted,Biomass,yes
+295,MArEPCOANUSC,Malawi,Centralised Generation,Not renewable,Coal,Malawi,Malawi,New Uncommitted,Supercritical coal,yes
+296,MArEPGASNUCC,Malawi,Centralised Generation,Not renewable,Gas,Malawi,Malawi,New Uncommitted,CCGT,yes
+297,MArEPGASNUOC,Malawi,Centralised Generation,Not renewable,Gas,Malawi,Malawi,New Uncommitted,OCGT,yes
+298,MArEPGASNUSO,Malawi,Centralised Generation,Not renewable,Gas,Malawi,Malawi,New Uncommitted,Solar thermal with gas co-firing,yes
+299,MArEPGEONU,Malawi,Centralised Generation,Not renewable,Gas,Malawi,Malawi,New Uncommitted,Geothermal,yes
+300,MArEPHYDEXnkul,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,Existing,Nkula,yes
+301,MArEPHYDEXoth,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,Existing,Other Hydros,yes
+302,MArEPHYDEXtedz,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,Existing,Tedzani,yes
+303,MArEPHYDNU,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Hydro,yes
+304,MArEPHYDNUfuf,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Fufu hydro,yes
+305,MArEPHYDNUka2,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Kapichira II hydro,yes
+306,MArEPHYDNUkho,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Kholombizo hydro,yes
+307,MArEPHYDNUmic,Malawi,Distributed Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Small Hydro,yes
+308,MArEPHYDNUmpa,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Mpatamanga hydro,yes
+309,MArEPHYDNUson,Malawi,Centralised Generation,Renewable,Hydro,Malawi,Malawi,New Uncommitted,Songwe hydro,yes
+310,MArEPNUCNUPW,Malawi,Centralised Generation,Not renewable,Nuclear,Malawi,Malawi,New Uncommitted,PWR nuclear,yes
+311,MArEPODSEXOC,Malawi,Centralised Generation,Not renewable,Oil,Malawi,Malawi,Existing,Existing Distillate,yes
+312,MArEPODSNU,Malawi,Centralised Generation,Not renewable,Oil,Malawi,Malawi,New Uncommitted,Diesel,yes
+313,MArEPODSNUind,Malawi,Distributed Generation,Not renewable,Oil,Malawi,Malawi,New Uncommitted,Diesel 100 kW system (industry),yes
+314,MArEPODSNUrur,Malawi,Distributed Generation,Not renewable,Oil,Malawi,Malawi,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+315,MArEPODSNUurb,Malawi,Distributed Generation,Not renewable,Oil,Malawi,Malawi,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+316,MArEPOHFNU,Malawi,Centralised Generation,Not renewable,Oil,Malawi,Malawi,New Uncommitted,HFO,yes
+317,MArEPSOLNUPVrt,Malawi,Distributed Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,Solar PV (roof top - urban),yes
+318,MArEPSOLNUPVrtru,Malawi,Distributed Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,Solar PV (roof top - rural),yes
+319,MArEPSOLNUPVst,Malawi,Distributed Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+320,MArEPSOLNUPVst2,Malawi,Distributed Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+321,MArEPSOLNUPVstru,Malawi,Distributed Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+322,MArEPSOLNUPVstru2,Malawi,Distributed Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+323,MArEPSOLNUPVut,Malawi,Centralised Generation,Renewable,Solar PV,Malawi,Malawi,New Uncommitted,Solar PV (utility),yes
+324,MArEPTSONUTH,Malawi,Centralised Generation,Renewable,Solar Thermal,Malawi,Malawi,New Uncommitted,Solar thermal no storage,yes
+325,MArEPTSONUTHst,Malawi,Centralised Generation,Renewable,Solar Thermal,Malawi,Malawi,New Uncommitted,Solar thermal with Storage,yes
+326,MArEPWNDNU25,Malawi,Centralised Generation,Renewable,Wind,Malawi,Malawi,New Uncommitted,Bulk Wind (20% CF),yes
+327,MArEPWNDNU30,Malawi,Centralised Generation,Renewable,Wind,Malawi,Malawi,New Uncommitted,Bulk Wind (30% CF),yes
+328,MArERural,Malawi,Demand,N/A,Electricity,Malawi,Malawi,N/A,Rural,yes
+329,MArETrans,Malawi,Transmission (local),N/A,Electricity,Malawi,Malawi,N/A,Local,no
+330,MArEUrban,Malawi,Demand,N/A,Electricity,Malawi,Malawi,N/A,Urban/Services/Small Industry,yes
+331,MArEXelc,Malawi,Export,N/A,Electricity,Malawi,Malawi,N/A,Electricity Export,no
+332,MArGas,Malawi,Energy Source,Not renewable,Gas,Malawi,Malawi,N/A,Gas,yes
+333,MArIMIelc,Malawi,Import,N/A,Electricity,Malawi,Malawi,N/A,Electricity Import,no
+334,MArNuclear,Malawi,Energy Source,Not renewable,Nuclear,Malawi,Malawi,N/A,Nuclear,yes
+335,MArOHF,Malawi,Energy Source,Not renewable,OHF,Malawi,Malawi,N/A,OHF,yes
+336,MArOil,Malawi,Energy Source,Not renewable,Oil,Malawi,Malawi,N/A,Oil,yes
+337,MOrBiomass,Mozambique,Energy Source,Renewable,Biomass,Mozambique,Mozambique,N/A,Biomass,yes
+338,MOrCoal,Mozambique,Energy Source,Not renewable,Coal,Mozambique,Mozambique,N/A,Coal,yes
+339,MOrCoalCCS,Mozambique,Energy Source,Not renewable,CoalCCS,Mozambique,Mozambique,N/A,CoalCCS,yes
+340,MOrCrude,Mozambique,Energy Source,Not renewable,Crude,Mozambique,Mozambique,N/A,Crude,yes
+341,MOrDiesel,Mozambique,Energy Source,Not renewable,Diesel,Mozambique,Mozambique,N/A,Diesel,yes
+342,MOrEBZ,Mozambique,Demand,N/A,Electricity,Mozambique,Mozambique,N/A,Unserved Energy,yes
+343,MOrEDist,Mozambique,Distribution,N/A,Electricity,Mozambique,Mozambique,N/A,Heavy Industry,no
+344,MOrEDistRural,Mozambique,Distribution,N/A,Electricity,Mozambique,Mozambique,N/A,Rural,no
+345,MOrEDistUrban,Mozambique,Distribution,N/A,Electricity,Mozambique,Mozambique,N/A,Urban/Services/Small Industry,no
+346,MOrEInd,Mozambique,Demand,N/A,Electricity,Mozambique,Mozambique,N/A,Heavy Industry,yes
+347,MOrEPBIONU,Mozambique,Centralised Generation,Renewable,Biomass,Mozambique,Mozambique,New Uncommitted,Biomass,yes
+348,MOrEPCOANUSC,Mozambique,Centralised Generation,Not renewable,Coal,Mozambique,Mozambique,New Uncommitted,Supercritical coal,yes
+349,MOrEPCOANUSCben,Mozambique,Centralised Generation,Not renewable,Coal,Mozambique,Mozambique,New Uncommitted,Benga Coal,yes
+350,MOrEPCOANUSCmoa,Mozambique,Centralised Generation,Not renewable,Coal,Mozambique,Mozambique,New Uncommitted,Moatize coal,yes
+351,MOrEPCOCNUCCS,Mozambique,Centralised Generation,Not renewable,Coal,Mozambique,Mozambique,New Uncommitted,Supercritical coal w CCS,yes
+352,MOrEPGASNUCC,Mozambique,Centralised Generation,Not renewable,Gas,Mozambique,Mozambique,New Uncommitted,CCGT,yes
+353,MOrEPGASNUCCtem,Mozambique,Centralised Generation,Not renewable,Gas,Mozambique,Mozambique,New Uncommitted,Temane (Aggreko) gas,yes
+354,MOrEPGASNUOC,Mozambique,Centralised Generation,Not renewable,Gas,Mozambique,Mozambique,New Uncommitted,OCGT,yes
+355,MOrEPGASNUSO,Mozambique,Centralised Generation,Not renewable,Gas,Mozambique,Mozambique,New Uncommitted,Solar thermal with gas co-firing,yes
+356,MOrEPGEONU,Mozambique,Centralised Generation,Not renewable,Gas,Mozambique,Mozambique,New Uncommitted,Geothermal,yes
+357,MOrEPHYDEXcaba,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,Existing,Cahora Bassa,yes
+358,MOrEPHYDEXoth,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,Existing,Other Hydros,yes
+359,MOrEPHYDNU,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,Hydro,yes
+360,MOrEPHYDNUhcb,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,HCB North Bank hydro,yes
+361,MOrEPHYDNUlur,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,Lurio Hydro,yes
+362,MOrEPHYDNUmas,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,Massingir hydro,yes
+363,MOrEPHYDNUmic,Mozambique,Distributed Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,Small Hydro,yes
+364,MOrEPHYDNUmpn,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,Mphanda Nkuwa hydro,yes
+365,MOrEPHYDNUqno,Mozambique,Centralised Generation,Renewable,Hydro,Mozambique,Mozambique,New Uncommitted,Quedas & Ocua hydro,yes
+366,MOrEPNUCNUPW,Mozambique,Centralised Generation,Not renewable,Nuclear,Mozambique,Mozambique,New Uncommitted,PWR nuclear,yes
+367,MOrEPODSEXOC,Mozambique,Centralised Generation,Not renewable,Oil,Mozambique,Mozambique,Existing,Existing Distillate,yes
+368,MOrEPODSNU,Mozambique,Centralised Generation,Not renewable,Oil,Mozambique,Mozambique,New Uncommitted,Diesel,yes
+369,MOrEPODSNUind,Mozambique,Distributed Generation,Not renewable,Oil,Mozambique,Mozambique,New Uncommitted,Diesel 100 kW system (industry),yes
+370,MOrEPODSNUrur,Mozambique,Distributed Generation,Not renewable,Oil,Mozambique,Mozambique,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+371,MOrEPODSNUurb,Mozambique,Distributed Generation,Not renewable,Oil,Mozambique,Mozambique,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+372,MOrEPOHFNU,Mozambique,Centralised Generation,Not renewable,Oil,Mozambique,Mozambique,New Uncommitted,HFO,yes
+373,MOrEPSOLNUPVrt,Mozambique,Distributed Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,Solar PV (roof top - urban),yes
+374,MOrEPSOLNUPVrtru,Mozambique,Distributed Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,Solar PV (roof top - rural),yes
+375,MOrEPSOLNUPVst,Mozambique,Distributed Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+376,MOrEPSOLNUPVst2,Mozambique,Distributed Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+377,MOrEPSOLNUPVstru,Mozambique,Distributed Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+378,MOrEPSOLNUPVstru2,Mozambique,Distributed Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+379,MOrEPSOLNUPVut,Mozambique,Centralised Generation,Renewable,Solar PV,Mozambique,Mozambique,New Uncommitted,Solar PV (utility),yes
+380,MOrEPTSONUTH,Mozambique,Centralised Generation,Renewable,Solar Thermal,Mozambique,Mozambique,New Uncommitted,Solar thermal no storage,yes
+381,MOrEPTSONUTHst,Mozambique,Centralised Generation,Renewable,Solar Thermal,Mozambique,Mozambique,New Uncommitted,Solar thermal with Storage,yes
+382,MOrEPWNDNU25,Mozambique,Centralised Generation,Renewable,Wind,Mozambique,Mozambique,New Uncommitted,Bulk Wind (20% CF),yes
+383,MOrEPWNDNU30,Mozambique,Centralised Generation,Renewable,Wind,Mozambique,Mozambique,New Uncommitted,Bulk Wind (30% CF),yes
+384,MOrERural,Mozambique,Demand,N/A,Electricity,Mozambique,Mozambique,N/A,Rural,yes
+385,MOrETrans,Mozambique,Transmission (local),N/A,Electricity,Mozambique,Mozambique,N/A,Local,no
+386,MOrEUrban,Mozambique,Demand,N/A,Electricity,Mozambique,Mozambique,N/A,Urban/Services/Small Industry,yes
+387,MOrEXelc,Mozambique,Export,N/A,Electricity,Mozambique,Mozambique,N/A,Electricity Export,no
+388,MOrGas,Mozambique,Energy Source,Not renewable,Gas,Mozambique,Mozambique,N/A,Gas,yes
+389,MOrIMIelc,Mozambique,Import,N/A,Electricity,Mozambique,Mozambique,N/A,Electricity Import,no
+390,MOrNuclear,Mozambique,Energy Source,Not renewable,Nuclear,Mozambique,Mozambique,N/A,Nuclear,yes
+391,MOrOHF,Mozambique,Energy Source,Not renewable,OHF,Mozambique,Mozambique,N/A,OHF,yes
+392,MOrOil,Mozambique,Energy Source,Not renewable,Oil,Mozambique,Mozambique,N/A,Oil,yes
+393,NArBiomass,Namibia,Energy Source,Renewable,Biomass,Namibia,Namibia,N/A,Biomass,yes
+394,NArCoal,Namibia,Energy Source,Not renewable,Coal,Namibia,Namibia,N/A,Coal,yes
+395,NArCoalCCS,Namibia,Energy Source,Not renewable,CoalCCS,Namibia,Namibia,N/A,CoalCCS,yes
+396,NArCrude,Namibia,Energy Source,Not renewable,Crude,Namibia,Namibia,N/A,Crude,yes
+397,NArDiesel,Namibia,Energy Source,Not renewable,Diesel,Namibia,Namibia,N/A,Diesel,yes
+398,NArEBZ,Namibia,Demand,N/A,Electricity,Namibia,Namibia,N/A,Unserved Energy,yes
+399,NArEDist,Namibia,Distribution,N/A,Electricity,Namibia,Namibia,N/A,Heavy Industry,no
+400,NArEDistRural,Namibia,Distribution,N/A,Electricity,Namibia,Namibia,N/A,Rural,no
+401,NArEDistUrban,Namibia,Distribution,N/A,Electricity,Namibia,Namibia,N/A,Urban/Services/Small Industry,no
+402,NArEInd,Namibia,Demand,N/A,Electricity,Namibia,Namibia,N/A,Heavy Industry,yes
+403,NArEPBIONU,Namibia,Centralised Generation,Renewable,Biomass,Namibia,Namibia,New Uncommitted,Biomass,yes
+404,NArEPCOAEXPF,Namibia,Centralised Generation,Not renewable,Coal,Namibia,Namibia,Existing,Van Eck,yes
+405,NArEPCOANUSC,Namibia,Centralised Generation,Not renewable,Coal,Namibia,Namibia,New Uncommitted,Supercritical coal,yes
+406,NArEPCOANUSCwal,Namibia,Centralised Generation,Not renewable,Coal,Namibia,Namibia,New Uncommitted,Walvis coal,yes
+407,NArEPCOCNUCCS,Namibia,Centralised Generation,Not renewable,Coal,Namibia,Namibia,New Uncommitted,Supercritical coal w CCS,yes
+408,NArEPGASNUCC,Namibia,Centralised Generation,Not renewable,Gas,Namibia,Namibia,New Uncommitted,CCGT,yes
+409,NArEPGASNUCCkud,Namibia,Centralised Generation,Not renewable,Gas,Namibia,Namibia,New Uncommitted,Kudu gas,yes
+410,NArEPGASNUOC,Namibia,Centralised Generation,Not renewable,Gas,Namibia,Namibia,New Uncommitted,OCGT,yes
+411,NArEPGASNUSO,Namibia,Centralised Generation,Not renewable,Gas,Namibia,Namibia,New Uncommitted,Solar thermal with gas co-firing,yes
+412,NArEPGEONU,Namibia,Centralised Generation,Not renewable,Gas,Namibia,Namibia,New Uncommitted,Geothermal,yes
+413,NArEPHYDEX,Namibia,Centralised Generation,Renewable,Hydro,Namibia,Namibia,Existing,Ruacana,yes
+414,NArEPHYDNU,Namibia,Centralised Generation,Renewable,Hydro,Namibia,Namibia,New Uncommitted,Hydro,yes
+415,NArEPHYDNUbay,Namibia,Centralised Generation,Renewable,Hydro,Namibia,Namibia,New Uncommitted,Baynes hydro,yes
+416,NArEPHYDNUmic,Namibia,Distributed Generation,Renewable,Hydro,Namibia,Namibia,New Uncommitted,Small Hydro,yes
+417,NArEPNUCNUPW,Namibia,Centralised Generation,Not renewable,Nuclear,Namibia,Namibia,New Uncommitted,PWR nuclear,yes
+418,NArEPODSEXOC,Namibia,Centralised Generation,Not renewable,Oil,Namibia,Namibia,Existing,Paratus,yes
+419,NArEPODSNU,Namibia,Centralised Generation,Not renewable,Oil,Namibia,Namibia,New Uncommitted,Diesel,yes
+420,NArEPODSNUind,Namibia,Distributed Generation,Not renewable,Oil,Namibia,Namibia,New Uncommitted,Diesel 100 kW system (industry),yes
+421,NArEPODSNUrur,Namibia,Distributed Generation,Not renewable,Oil,Namibia,Namibia,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+422,NArEPODSNUurb,Namibia,Distributed Generation,Not renewable,Oil,Namibia,Namibia,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+423,NArEPOHFNU,Namibia,Centralised Generation,Not renewable,Oil,Namibia,Namibia,New Uncommitted,HFO,yes
+424,NArEPSOLNUPVrt,Namibia,Distributed Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,Solar PV (roof top - urban),yes
+425,NArEPSOLNUPVrtru,Namibia,Distributed Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,Solar PV (roof top - rural),yes
+426,NArEPSOLNUPVst,Namibia,Distributed Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+427,NArEPSOLNUPVst2,Namibia,Distributed Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+428,NArEPSOLNUPVstru,Namibia,Distributed Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+429,NArEPSOLNUPVstru2,Namibia,Distributed Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+430,NArEPSOLNUPVut,Namibia,Centralised Generation,Renewable,Solar PV,Namibia,Namibia,New Uncommitted,Solar PV (utility),yes
+431,NArEPTSONUTH,Namibia,Centralised Generation,Renewable,Solar Thermal,Namibia,Namibia,New Uncommitted,Solar thermal no storage,yes
+432,NArEPTSONUTHst,Namibia,Centralised Generation,Renewable,Solar Thermal,Namibia,Namibia,New Uncommitted,Solar thermal with Storage,yes
+433,NArEPWNDNU25,Namibia,Centralised Generation,Renewable,Wind,Namibia,Namibia,New Uncommitted,Bulk Wind (20% CF),yes
+434,NArEPWNDNU30,Namibia,Centralised Generation,Renewable,Wind,Namibia,Namibia,New Uncommitted,Bulk Wind (30% CF),yes
+435,NArERural,Namibia,Demand,N/A,Electricity,Namibia,Namibia,N/A,Rural,yes
+436,NArETrans,Namibia,Transmission (local),N/A,Electricity,Namibia,Namibia,N/A,Local,no
+437,NArEUrban,Namibia,Demand,N/A,Electricity,Namibia,Namibia,N/A,Urban/Services/Small Industry,yes
+438,NArEXelc,Namibia,Export,N/A,Electricity,Namibia,Namibia,N/A,Electricity Export,no
+439,NArGas,Namibia,Energy Source,Not renewable,Gas,Namibia,Namibia,N/A,Gas,yes
+440,NArIMIelc,Namibia,Import,N/A,Electricity,Namibia,Namibia,N/A,Electricity Import,no
+441,NArNuclear,Namibia,Energy Source,Not renewable,Nuclear,Namibia,Namibia,N/A,Nuclear,yes
+442,NArOHF,Namibia,Energy Source,Not renewable,OHF,Namibia,Namibia,N/A,OHF,yes
+443,NArOil,Namibia,Energy Source,Not renewable,Oil,Namibia,Namibia,N/A,Oil,yes
+444,SArBiomass,South Africa,Energy Source,Renewable,Biomass,South Africa,South Africa,N/A,Biomass,yes
+445,SArCoal,South Africa,Energy Source,Not renewable,Coal,South Africa,South Africa,N/A,Coal,yes
+446,SArCoalCCS,South Africa,Energy Source,Not renewable,CoalCCS,South Africa,South Africa,N/A,CoalCCS,yes
+447,SArCrude,South Africa,Energy Source,Not renewable,Crude,South Africa,South Africa,N/A,Crude,yes
+448,SArDiesel,South Africa,Energy Source,Not renewable,Diesel,South Africa,South Africa,N/A,Diesel,yes
+449,SArEBZ,South Africa,Demand,N/A,Electricity,South Africa,South Africa,N/A,Unserved Energy,yes
+450,SArEDist,South Africa,Distribution,N/A,Electricity,South Africa,South Africa,N/A,Heavy Industry,no
+451,SArEDistRural,South Africa,Distribution,N/A,Electricity,South Africa,South Africa,N/A,Rural,no
+452,SArEDistUrban,South Africa,Distribution,N/A,Electricity,South Africa,South Africa,N/A,Urban/Services/Small Industry,no
+453,SArEInd,South Africa,Demand,N/A,Electricity,South Africa,South Africa,N/A,Heavy Industry,yes
+454,SArEPBIONU,South Africa,Centralised Generation,Renewable,Biomass,South Africa,South Africa,New Uncommitted,Biomass,yes
+455,SArEPCOAEXPFLU,South Africa,Centralised Generation,Not renewable,Coal,South Africa,South Africa,Existing,Existing coal Large,yes
+456,SArEPCOAEXPFSU,South Africa,Centralised Generation,Not renewable,Coal,South Africa,South Africa,Existing,Existing coal Small,yes
+457,SArEPCOANCSCkus,South Africa,Centralised Generation,Not renewable,Coal,South Africa,South Africa,New Committed,Kusile coal,yes
+458,SArEPCOANCSCmed,South Africa,Centralised Generation,Not renewable,Coal,South Africa,South Africa,New Committed,Medupi coal,yes
+459,SArEPCOANUSC,South Africa,Centralised Generation,Not renewable,Coal,South Africa,South Africa,New Uncommitted,Supercritical coal,yes
+460,SArEPCOCNUCCS,South Africa,Centralised Generation,Not renewable,Coal,South Africa,South Africa,New Uncommitted,Supercritical coal w CCS,yes
+461,SArEPGASNUCC,South Africa,Centralised Generation,Not renewable,Gas,South Africa,South Africa,New Uncommitted,CCGT,yes
+462,SArEPGASNUOC,South Africa,Centralised Generation,Not renewable,Gas,South Africa,South Africa,New Uncommitted,OCGT,yes
+463,SArEPGASNUSO,South Africa,Centralised Generation,Not renewable,Gas,South Africa,South Africa,New Uncommitted,Solar thermal with gas co-firing,yes
+464,SArEPGEONU,South Africa,Centralised Generation,Not renewable,Gas,South Africa,South Africa,New Uncommitted,Geothermal,yes
+465,SArEPHYDEX,South Africa,Centralised Generation,Renewable,Hydro,South Africa,South Africa,Existing,Hydro,yes
+466,SArEPHYDNU,South Africa,Centralised Generation,Renewable,Hydro,South Africa,South Africa,New Uncommitted,Hydro,yes
+467,SArEPHYDNUmic,South Africa,Distributed Generation,Renewable,Hydro,South Africa,South Africa,New Uncommitted,Small Hydro,yes
+468,SArEPNUCEXPW,South Africa,Centralised Generation,Not renewable,Nuclear,South Africa,South Africa,Existing,PWR nuclear,yes
+469,SArEPNUCNUPW,South Africa,Centralised Generation,Not renewable,Nuclear,South Africa,South Africa,New Uncommitted,PWR nuclear,yes
+470,SArEPODSEXOC,South Africa,Centralised Generation,Not renewable,Oil,South Africa,South Africa,Existing,OCGT liquid fuels,yes
+471,SArEPODSNU,South Africa,Centralised Generation,Not renewable,Oil,South Africa,South Africa,New Uncommitted,Diesel,yes
+472,SArEPODSNUind,South Africa,Distributed Generation,Not renewable,Oil,South Africa,South Africa,New Uncommitted,Diesel 100 kW system (industry),yes
+473,SArEPODSNUrur,South Africa,Distributed Generation,Not renewable,Oil,South Africa,South Africa,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+474,SArEPODSNUurb,South Africa,Distributed Generation,Not renewable,Oil,South Africa,South Africa,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+475,SArEPOHFNU,South Africa,Centralised Generation,Not renewable,Oil,South Africa,South Africa,New Uncommitted,HFO,yes
+476,SArEPPSGEXSP,South Africa,Centralised Generation,Not renewable,Pump Storage,South Africa,South Africa,Existing,Pumped storage,yes
+477,SArEPPSGEXST,South Africa,Centralised Generation,Not renewable,Pump Storage,South Africa,South Africa,Existing,Pumped storage,yes
+478,SArEPPSGNCSPbra,South Africa,Centralised Generation,Not renewable,Pump Storage,South Africa,South Africa,New Committed,Ingula Pump Storage,yes
+479,SArEPPSGNCSTbra,South Africa,Centralised Generation,Not renewable,Pump Storage,South Africa,South Africa,New Committed,Ingula Pump Storage,yes
+480,SArEPPSGNUSPste,South Africa,Centralised Generation,Not renewable,Pump Storage,South Africa,South Africa,New Uncommitted,Tubaste,yes
+481,SArEPPSGNUSTste,South Africa,Centralised Generation,Not renewable,Pump Storage,South Africa,South Africa,New Uncommitted,Tubaste,yes
+482,SArEPSOLNUPVrt,South Africa,Distributed Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,Solar PV (roof top - urban),yes
+483,SArEPSOLNUPVrtru,South Africa,Distributed Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,Solar PV (roof top - rural),yes
+484,SArEPSOLNUPVst,South Africa,Distributed Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+485,SArEPSOLNUPVst2,South Africa,Distributed Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+486,SArEPSOLNUPVstru,South Africa,Distributed Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+487,SArEPSOLNUPVstru2,South Africa,Distributed Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+488,SArEPSOLNUPVut,South Africa,Centralised Generation,Renewable,Solar PV,South Africa,South Africa,New Uncommitted,Solar PV (utility),yes
+489,SArEPTSONUTH,South Africa,Centralised Generation,Renewable,Solar Thermal,South Africa,South Africa,New Uncommitted,Solar thermal no storage,yes
+490,SArEPTSONUTHst,South Africa,Centralised Generation,Renewable,Solar Thermal,South Africa,South Africa,New Uncommitted,Solar thermal with Storage,yes
+491,SArEPWNDNU25,South Africa,Centralised Generation,Renewable,Wind,South Africa,South Africa,New Uncommitted,Bulk Wind (20% CF),yes
+492,SArEPWNDNU30,South Africa,Centralised Generation,Renewable,Wind,South Africa,South Africa,New Uncommitted,Bulk Wind (30% CF),yes
+493,SArERural,South Africa,Demand,N/A,Electricity,South Africa,South Africa,N/A,Rural,yes
+494,SArETrans,South Africa,Transmission (local),N/A,Electricity,South Africa,South Africa,N/A,Local,no
+495,SArEUrban,South Africa,Demand,N/A,Electricity,South Africa,South Africa,N/A,Urban/Services/Small Industry,yes
+496,SArEXelc,South Africa,Export,N/A,Electricity,South Africa,South Africa,N/A,Electricity Export,no
+497,SArGas,South Africa,Energy Source,Not renewable,Gas,South Africa,South Africa,N/A,Gas,yes
+498,SArIMIelc,South Africa,Import,N/A,Electricity,South Africa,South Africa,N/A,Electricity Import,no
+499,SArNuclear,South Africa,Energy Source,Not renewable,Nuclear,South Africa,South Africa,N/A,Nuclear,yes
+500,SArOHF,South Africa,Energy Source,Not renewable,OHF,South Africa,South Africa,N/A,OHF,yes
+501,SArOil,South Africa,Energy Source,Not renewable,Oil,South Africa,South Africa,N/A,Oil,yes
+502,SWrBiomass,Swaziland,Energy Source,Renewable,Biomass,Swaziland,Swaziland,N/A,Biomass,yes
+503,SWrCoal,Swaziland,Energy Source,Not renewable,Coal,Swaziland,Swaziland,N/A,Coal,yes
+504,SWrCoalCCS,Swaziland,Energy Source,Not renewable,CoalCCS,Swaziland,Swaziland,N/A,CoalCCS,yes
+505,SWrCrude,Swaziland,Energy Source,Not renewable,Crude,Swaziland,Swaziland,N/A,Crude,yes
+506,SWrDiesel,Swaziland,Energy Source,Not renewable,Diesel,Swaziland,Swaziland,N/A,Diesel,yes
+507,SWrEBZ,Swaziland,Demand,N/A,Electricity,Swaziland,Swaziland,N/A,Unserved Energy,yes
+508,SWrEDist,Swaziland,Distribution,N/A,Electricity,Swaziland,Swaziland,N/A,Heavy Industry,no
+509,SWrEDistRural,Swaziland,Distribution,N/A,Electricity,Swaziland,Swaziland,N/A,Rural,no
+510,SWrEDistUrban,Swaziland,Distribution,N/A,Electricity,Swaziland,Swaziland,N/A,Urban/Services/Small Industry,no
+511,SWrEInd,Swaziland,Demand,N/A,Electricity,Swaziland,Swaziland,N/A,Heavy Industry,yes
+512,SWrEPBIONU,Swaziland,Centralised Generation,Renewable,Biomass,Swaziland,Swaziland,New Uncommitted,Biomass,yes
+513,SWrEPCOANCSClub,Swaziland,Centralised Generation,Not renewable,Coal,Swaziland,Swaziland,New Committed,Lubombo coal,yes
+514,SWrEPCOANUSC,Swaziland,Centralised Generation,Not renewable,Coal,Swaziland,Swaziland,New Uncommitted,Supercritical coal,yes
+515,SWrEPGASNUCC,Swaziland,Centralised Generation,Not renewable,Gas,Swaziland,Swaziland,New Uncommitted,CCGT,yes
+516,SWrEPGASNUOC,Swaziland,Centralised Generation,Not renewable,Gas,Swaziland,Swaziland,New Uncommitted,OCGT,yes
+517,SWrEPGASNUSO,Swaziland,Centralised Generation,Not renewable,Gas,Swaziland,Swaziland,New Uncommitted,Solar thermal with gas co-firing,yes
+518,SWrEPGEONU,Swaziland,Centralised Generation,Not renewable,Gas,Swaziland,Swaziland,New Uncommitted,Geothermal,yes
+519,SWrEPHYDEX,Swaziland,Centralised Generation,Renewable,Hydro,Swaziland,Swaziland,Existing,Hydros,yes
+520,SWrEPHYDNU,Swaziland,Centralised Generation,Renewable,Hydro,Swaziland,Swaziland,New Uncommitted,Hydro,yes
+521,SWrEPHYDNUmic,Swaziland,Distributed Generation,Renewable,Hydro,Swaziland,Swaziland,New Uncommitted,Small Hydro,yes
+522,SWrEPNUCNUPW,Swaziland,Centralised Generation,Not renewable,Nuclear,Swaziland,Swaziland,New Uncommitted,PWR nuclear,yes
+523,SWrEPODSNU,Swaziland,Centralised Generation,Not renewable,Oil,Swaziland,Swaziland,New Uncommitted,Diesel,yes
+524,SWrEPODSNUind,Swaziland,Distributed Generation,Not renewable,Oil,Swaziland,Swaziland,New Uncommitted,Diesel 100 kW system (industry),yes
+525,SWrEPODSNUrur,Swaziland,Distributed Generation,Not renewable,Oil,Swaziland,Swaziland,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+526,SWrEPODSNUurb,Swaziland,Distributed Generation,Not renewable,Oil,Swaziland,Swaziland,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+527,SWrEPOHFNU,Swaziland,Centralised Generation,Not renewable,Oil,Swaziland,Swaziland,New Uncommitted,HFO,yes
+528,SWrEPSOLNUPVrt,Swaziland,Distributed Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,Solar PV (roof top - urban),yes
+529,SWrEPSOLNUPVrtru,Swaziland,Distributed Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,Solar PV (roof top - rural),yes
+530,SWrEPSOLNUPVst,Swaziland,Distributed Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+531,SWrEPSOLNUPVst2,Swaziland,Distributed Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+532,SWrEPSOLNUPVstru,Swaziland,Distributed Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+533,SWrEPSOLNUPVstru2,Swaziland,Distributed Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+534,SWrEPSOLNUPVut,Swaziland,Centralised Generation,Renewable,Solar PV,Swaziland,Swaziland,New Uncommitted,Solar PV (utility),yes
+535,SWrEPTSONUTH,Swaziland,Centralised Generation,Renewable,Solar Thermal,Swaziland,Swaziland,New Uncommitted,Solar thermal no storage,yes
+536,SWrEPTSONUTHst,Swaziland,Centralised Generation,Renewable,Solar Thermal,Swaziland,Swaziland,New Uncommitted,Solar thermal with Storage,yes
+537,SWrEPWNDNU25,Swaziland,Centralised Generation,Renewable,Wind,Swaziland,Swaziland,New Uncommitted,Bulk Wind (20% CF),yes
+538,SWrEPWNDNU30,Swaziland,Centralised Generation,Renewable,Wind,Swaziland,Swaziland,New Uncommitted,Bulk Wind (30% CF),yes
+539,SWrERural,Swaziland,Demand,N/A,Electricity,Swaziland,Swaziland,N/A,Rural,yes
+540,SWrETrans,Swaziland,Transmission (local),N/A,Electricity,Swaziland,Swaziland,N/A,Local,no
+541,SWrEUrban,Swaziland,Demand,N/A,Electricity,Swaziland,Swaziland,N/A,Urban/Services/Small Industry,yes
+542,SWrEXelc,Swaziland,Export,N/A,Electricity,Swaziland,Swaziland,N/A,Electricity Export,no
+543,SWrGas,Swaziland,Energy Source,Not renewable,Gas,Swaziland,Swaziland,N/A,Gas,yes
+544,SWrIMIelc,Swaziland,Import,N/A,Electricity,Swaziland,Swaziland,N/A,Electricity Import,no
+545,SWrNuclear,Swaziland,Energy Source,Not renewable,Nuclear,Swaziland,Swaziland,N/A,Nuclear,yes
+546,SWrOHF,Swaziland,Energy Source,Not renewable,OHF,Swaziland,Swaziland,N/A,OHF,yes
+547,SWrOil,Swaziland,Energy Source,Not renewable,Oil,Swaziland,Swaziland,N/A,Oil,yes
+548,TArBiomass,Tanzania,Energy Source,Renewable,Biomass,Tanzania,Tanzania,N/A,Biomass,yes
+549,TArCoal,Tanzania,Energy Source,Not renewable,Coal,Tanzania,Tanzania,N/A,Coal,yes
+550,TArCoalCCS,Tanzania,Energy Source,Not renewable,CoalCCS,Tanzania,Tanzania,N/A,CoalCCS,yes
+551,TArCrude,Tanzania,Energy Source,Not renewable,Crude,Tanzania,Tanzania,N/A,Crude,yes
+552,TArDiesel,Tanzania,Energy Source,Not renewable,Diesel,Tanzania,Tanzania,N/A,Diesel,yes
+553,TArEBZ,Tanzania,Demand,N/A,Electricity,Tanzania,Tanzania,N/A,Unserved Energy,yes
+554,TArEDist,Tanzania,Distribution,N/A,Electricity,Tanzania,Tanzania,N/A,Heavy Industry,no
+555,TArEDistRural,Tanzania,Distribution,N/A,Electricity,Tanzania,Tanzania,N/A,Rural,no
+556,TArEDistUrban,Tanzania,Distribution,N/A,Electricity,Tanzania,Tanzania,N/A,Urban/Services/Small Industry,no
+557,TArEInd,Tanzania,Demand,N/A,Electricity,Tanzania,Tanzania,N/A,Heavy Industry,yes
+558,TArEPBIONU,Tanzania,Centralised Generation,Renewable,Biomass,Tanzania,Tanzania,New Uncommitted,Biomass,yes
+559,TArEPCOANCSCkiw,Tanzania,Centralised Generation,Not renewable,Coal,Tanzania,Tanzania,New Committed,Kiwira coal,yes
+560,TArEPCOANUSC,Tanzania,Centralised Generation,Not renewable,Coal,Tanzania,Tanzania,New Uncommitted,Supercritical coal,yes
+561,TArEPCOANUSCmch,Tanzania,Centralised Generation,Not renewable,Coal,Tanzania,Tanzania,New Uncommitted,Mchuchuma coal,yes
+562,TArEPGASEXOC,Tanzania,Centralised Generation,Not renewable,Gas,Tanzania,Tanzania,Existing,Existing NatGas,yes
+563,TArEPGASNUCC,Tanzania,Centralised Generation,Not renewable,Gas,Tanzania,Tanzania,New Uncommitted,CCGT,yes
+564,TArEPGASNUCCkin,Tanzania,Centralised Generation,Not renewable,Gas,Tanzania,Tanzania,New Uncommitted,Kinyerezi gas,yes
+565,TArEPGASNUOC,Tanzania,Centralised Generation,Not renewable,Gas,Tanzania,Tanzania,New Uncommitted,OCGT,yes
+566,TArEPGASNUSO,Tanzania,Centralised Generation,Not renewable,Gas,Tanzania,Tanzania,New Uncommitted,Solar thermal with gas co-firing,yes
+567,TArEPGEONU,Tanzania,Centralised Generation,Not renewable,Gas,Tanzania,Tanzania,New Uncommitted,Geothermal,yes
+568,TArEPHYDEXLU,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,Existing,Large Hydros,yes
+569,TArEPHYDEXoth,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,Existing,Other Hydros,yes
+570,TArEPHYDNU,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Hydro,yes
+571,TArEPHYDNUkak,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Kakono,yes
+572,TArEPHYDNUmic,Tanzania,Distributed Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Small Hydro,yes
+573,TArEPHYDNUmsg,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Masigira,yes
+574,TArEPHYDNUruh,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Ruhudji,yes
+575,TArEPHYDNUrum,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Rumakali,yes
+576,TArEPHYDNUrus,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Rusomo,yes
+577,TArEPHYDNUstg,Tanzania,Centralised Generation,Renewable,Hydro,Tanzania,Tanzania,New Uncommitted,Stieglers Gorge,yes
+578,TArEPNUCNUPW,Tanzania,Centralised Generation,Not renewable,Nuclear,Tanzania,Tanzania,New Uncommitted,PWR nuclear,yes
+579,TArEPODSEXOC,Tanzania,Centralised Generation,Not renewable,Oil,Tanzania,Tanzania,Existing,Existing Distillate,yes
+580,TArEPODSNU,Tanzania,Centralised Generation,Not renewable,Oil,Tanzania,Tanzania,New Uncommitted,Diesel,yes
+581,TArEPODSNUind,Tanzania,Distributed Generation,Not renewable,Oil,Tanzania,Tanzania,New Uncommitted,Diesel 100 kW system (industry),yes
+582,TArEPODSNUrur,Tanzania,Distributed Generation,Not renewable,Oil,Tanzania,Tanzania,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+583,TArEPODSNUurb,Tanzania,Distributed Generation,Not renewable,Oil,Tanzania,Tanzania,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+584,TArEPOHFNU,Tanzania,Centralised Generation,Not renewable,Oil,Tanzania,Tanzania,New Uncommitted,HFO,yes
+585,TArEPSOLNUPVrt,Tanzania,Distributed Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,Solar PV (roof top - urban),yes
+586,TArEPSOLNUPVrtru,Tanzania,Distributed Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,Solar PV (roof top - rural),yes
+587,TArEPSOLNUPVst,Tanzania,Distributed Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+588,TArEPSOLNUPVst2,Tanzania,Distributed Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+589,TArEPSOLNUPVstru,Tanzania,Distributed Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+590,TArEPSOLNUPVstru2,Tanzania,Distributed Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+591,TArEPSOLNUPVut,Tanzania,Centralised Generation,Renewable,Solar PV,Tanzania,Tanzania,New Uncommitted,Solar PV (utility),yes
+592,TArEPTSONUTH,Tanzania,Centralised Generation,Renewable,Solar Thermal,Tanzania,Tanzania,New Uncommitted,Solar thermal no storage,yes
+593,TArEPTSONUTHst,Tanzania,Centralised Generation,Renewable,Solar Thermal,Tanzania,Tanzania,New Uncommitted,Solar thermal with Storage,yes
+594,TArEPWNDNU25,Tanzania,Centralised Generation,Renewable,Wind,Tanzania,Tanzania,New Uncommitted,Bulk Wind (20% CF),yes
+595,TArEPWNDNU30,Tanzania,Centralised Generation,Renewable,Wind,Tanzania,Tanzania,New Uncommitted,Bulk Wind (30% CF),yes
+596,TArERural,Tanzania,Demand,N/A,Electricity,Tanzania,Tanzania,N/A,Rural,yes
+597,TArETrans,Tanzania,Transmission (local),N/A,Electricity,Tanzania,Tanzania,N/A,Local,no
+598,TArEUrban,Tanzania,Demand,N/A,Electricity,Tanzania,Tanzania,N/A,Urban/Services/Small Industry,yes
+599,TArEXelc,Tanzania,Export,N/A,Electricity,Tanzania,Tanzania,N/A,Electricity Export,no
+600,TArGas,Tanzania,Energy Source,Not renewable,Gas,Tanzania,Tanzania,N/A,Gas,yes
+601,TArIMIelc,Tanzania,Import,N/A,Electricity,Tanzania,Tanzania,N/A,Electricity Import,no
+602,TArNuclear,Tanzania,Energy Source,Not renewable,Nuclear,Tanzania,Tanzania,N/A,Nuclear,yes
+603,TArOHF,Tanzania,Energy Source,Not renewable,OHF,Tanzania,Tanzania,N/A,OHF,yes
+604,TArOil,Tanzania,Energy Source,Not renewable,Oil,Tanzania,Tanzania,N/A,Oil,yes
+605,ZArBiomass,Zambia,Energy Source,Renewable,Biomass,Zambia,Zambia,N/A,Biomass,yes
+606,ZArCoal,Zambia,Energy Source,Not renewable,Coal,Zambia,Zambia,N/A,Coal,yes
+607,ZArCoalCCS,Zambia,Energy Source,Not renewable,CoalCCS,Zambia,Zambia,N/A,CoalCCS,yes
+608,ZArCrude,Zambia,Energy Source,Not renewable,Crude,Zambia,Zambia,N/A,Crude,yes
+609,ZArDiesel,Zambia,Energy Source,Not renewable,Diesel,Zambia,Zambia,N/A,Diesel,yes
+610,ZArEBZ,Zambia,Demand,N/A,Electricity,Zambia,Zambia,N/A,Unserved Energy,yes
+611,ZArEDist,Zambia,Distribution,N/A,Electricity,Zambia,Zambia,N/A,Heavy Industry,no
+612,ZArEDistRural,Zambia,Distribution,N/A,Electricity,Zambia,Zambia,N/A,Rural,no
+613,ZArEDistUrban,Zambia,Distribution,N/A,Electricity,Zambia,Zambia,N/A,Urban/Services/Small Industry,no
+614,ZArEInd,Zambia,Demand,N/A,Electricity,Zambia,Zambia,N/A,Heavy Industry,yes
+615,ZArEPBIONU,Zambia,Centralised Generation,Renewable,Biomass,Zambia,Zambia,New Uncommitted,Biomass,yes
+616,ZArEPCOANUSC,Zambia,Centralised Generation,Not renewable,Coal,Zambia,Zambia,New Uncommitted,Supercritical coal,yes
+617,ZArEPCOANUSCmaa,Zambia,Centralised Generation,Not renewable,Coal,Zambia,Zambia,New Uncommitted,Maamba Coal fired,yes
+618,ZArEPGASNUCC,Zambia,Centralised Generation,Not renewable,Gas,Zambia,Zambia,New Uncommitted,CCGT,yes
+619,ZArEPGASNUOC,Zambia,Centralised Generation,Not renewable,Gas,Zambia,Zambia,New Uncommitted,OCGT,yes
+620,ZArEPGASNUSO,Zambia,Centralised Generation,Not renewable,Gas,Zambia,Zambia,New Uncommitted,Solar thermal with gas co-firing,yes
+621,ZArEPGEONU,Zambia,Centralised Generation,Not renewable,Gas,Zambia,Zambia,New Uncommitted,Geothermal,yes
+622,ZArEPHYDEXLU,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,Existing,Large Hydros,yes
+623,ZArEPHYDEXoth,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,Existing,Other Hydros,yes
+624,ZArEPHYDNU,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Hydro,yes
+625,ZArEPHYDNUbat,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Batoka Gorge hydro,yes
+626,ZArEPHYDNUdvg,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Devils Gorge,yes
+627,ZArEPHYDNUite,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Itezhi-Tezhi hydro,yes
+628,ZArEPHYDNUIus,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Lusiwasi,yes
+629,ZArEPHYDNUkab,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Kabompo,yes
+630,ZArEPHYDNUkal,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Kalungwishi hydro,yes
+631,ZArEPHYDNUkne,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Kariba North Extension hydro,yes
+632,ZArEPHYDNUlun,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Lunsenfwa,yes
+633,ZArEPHYDNUmam,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Mambililma Falls,yes
+634,ZArEPHYDNUmic,Zambia,Distributed Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Small Hydro,yes
+635,ZArEPHYDNUmpg,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Mpata Gorge,yes
+636,ZArEPHYDNUmum,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Mumbotula Fall,yes
+637,ZArEPHYDNUrkgl,Zambia,Centralised Generation,Renewable,Hydro,Zambia,Zambia,New Uncommitted,Kafue Gorge Lower hydro,yes
+638,ZArEPNUCNUPW,Zambia,Centralised Generation,Not renewable,Nuclear,Zambia,Zambia,New Uncommitted,PWR nuclear,yes
+639,ZArEPODSEXOC,Zambia,Centralised Generation,Not renewable,Oil,Zambia,Zambia,Existing,Diesel,yes
+640,ZArEPODSNU,Zambia,Centralised Generation,Not renewable,Oil,Zambia,Zambia,New Uncommitted,Diesel,yes
+641,ZArEPODSNUind,Zambia,Distributed Generation,Not renewable,Oil,Zambia,Zambia,New Uncommitted,Diesel 100 kW system (industry),yes
+642,ZArEPODSNUrur,Zambia,Distributed Generation,Not renewable,Oil,Zambia,Zambia,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+643,ZArEPODSNUurb,Zambia,Distributed Generation,Not renewable,Oil,Zambia,Zambia,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+644,ZArEPOHFNU,Zambia,Centralised Generation,Not renewable,Oil,Zambia,Zambia,New Uncommitted,HFO,yes
+645,ZArEPSOLNUPVrt,Zambia,Distributed Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,Solar PV (roof top - urban),yes
+646,ZArEPSOLNUPVrtru,Zambia,Distributed Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,Solar PV (roof top - rural),yes
+647,ZArEPSOLNUPVst,Zambia,Distributed Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+648,ZArEPSOLNUPVst2,Zambia,Distributed Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+649,ZArEPSOLNUPVstru,Zambia,Distributed Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+650,ZArEPSOLNUPVstru2,Zambia,Distributed Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+651,ZArEPSOLNUPVut,Zambia,Centralised Generation,Renewable,Solar PV,Zambia,Zambia,New Uncommitted,Solar PV (utility),yes
+652,ZArEPTSONUTH,Zambia,Centralised Generation,Renewable,Solar Thermal,Zambia,Zambia,New Uncommitted,Solar thermal no storage,yes
+653,ZArEPTSONUTHst,Zambia,Centralised Generation,Renewable,Solar Thermal,Zambia,Zambia,New Uncommitted,Solar thermal with Storage,yes
+654,ZArEPWNDNU25,Zambia,Centralised Generation,Renewable,Wind,Zambia,Zambia,New Uncommitted,Bulk Wind (20% CF),yes
+655,ZArEPWNDNU30,Zambia,Centralised Generation,Renewable,Wind,Zambia,Zambia,New Uncommitted,Bulk Wind (30% CF),yes
+656,ZArERural,Zambia,Demand,N/A,Electricity,Zambia,Zambia,N/A,Rural,yes
+657,ZArETrans,Zambia,Transmission (local),N/A,Electricity,Zambia,Zambia,N/A,Local,no
+658,ZArEUrban,Zambia,Demand,N/A,Electricity,Zambia,Zambia,N/A,Urban/Services/Small Industry,yes
+659,ZArEXelc,Zambia,Export,N/A,Electricity,Zambia,Zambia,N/A,Electricity Export,no
+660,ZArGas,Zambia,Energy Source,Not renewable,Gas,Zambia,Zambia,N/A,Gas,yes
+661,ZArIMIelc,Zambia,Import,N/A,Electricity,Zambia,Zambia,N/A,Electricity Import,no
+662,ZArNuclear,Zambia,Energy Source,Not renewable,Nuclear,Zambia,Zambia,N/A,Nuclear,yes
+663,ZArOHF,Zambia,Energy Source,Not renewable,OHF,Zambia,Zambia,N/A,OHF,yes
+664,ZArOil,Zambia,Energy Source,Not renewable,Oil,Zambia,Zambia,N/A,Oil,yes
+665,ZIrBiomass,Zimbabwe,Energy Source,Renewable,Biomass,Zimbabwe,Zimbabwe,N/A,Biomass,yes
+666,ZIrCoal,Zimbabwe,Energy Source,Not renewable,Coal,Zimbabwe,Zimbabwe,N/A,Coal,yes
+667,ZIrCoalCCS,Zimbabwe,Energy Source,Not renewable,CoalCCS,Zimbabwe,Zimbabwe,N/A,CoalCCS,yes
+668,ZIrCrude,Zimbabwe,Energy Source,Not renewable,Crude,Zimbabwe,Zimbabwe,N/A,Crude,yes
+669,ZIrDiesel,Zimbabwe,Energy Source,Not renewable,Diesel,Zimbabwe,Zimbabwe,N/A,Diesel,yes
+670,ZIrEBZ,Zimbabwe,Demand,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Unserved Energy,yes
+671,ZIrEDist,Zimbabwe,Distribution,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Heavy Industry,no
+672,ZIrEDistRural,Zimbabwe,Distribution,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Rural,no
+673,ZIrEDistUrban,Zimbabwe,Distribution,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Urban/Services/Small Industry,no
+674,ZIrEInd,Zimbabwe,Demand,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Heavy Industry,yes
+675,ZIrEPBIONU,Zimbabwe,Centralised Generation,Renewable,Biomass,Zimbabwe,Zimbabwe,New Uncommitted,Biomass,yes
+676,ZIrEPCOAEXPF,Zimbabwe,Centralised Generation,Not renewable,Coal,Zimbabwe,Zimbabwe,Existing,Existing Coal,yes
+677,ZIrEPCOANUSC,Zimbabwe,Centralised Generation,Not renewable,Coal,Zimbabwe,Zimbabwe,New Uncommitted,Supercritical coal,yes
+678,ZIrEPCOANUSCgon,Zimbabwe,Centralised Generation,Not renewable,Coal,Zimbabwe,Zimbabwe,New Uncommitted,Gokwe North coal,yes
+679,ZIrEPCOANUSChwa,Zimbabwe,Centralised Generation,Not renewable,Coal,Zimbabwe,Zimbabwe,New Uncommitted,Hwange 7-8 coal,yes
+680,ZIrEPCOCNUCCS,Zimbabwe,Centralised Generation,Not renewable,Coal,Zimbabwe,Zimbabwe,New Uncommitted,Supercritical coal w CCS,yes
+681,ZIrEPGASNUCC,Zimbabwe,Centralised Generation,Not renewable,Gas,Zimbabwe,Zimbabwe,New Uncommitted,CCGT,yes
+682,ZIrEPGASNUCClup,Zimbabwe,Centralised Generation,Not renewable,Gas,Zimbabwe,Zimbabwe,New Uncommitted,Lupane gas,yes
+683,ZIrEPGASNUOC,Zimbabwe,Centralised Generation,Not renewable,Gas,Zimbabwe,Zimbabwe,New Uncommitted,OCGT,yes
+684,ZIrEPGASNUSO,Zimbabwe,Centralised Generation,Not renewable,Gas,Zimbabwe,Zimbabwe,New Uncommitted,Solar thermal with gas co-firing,yes
+685,ZIrEPGEONU,Zimbabwe,Centralised Generation,Not renewable,Gas,Zimbabwe,Zimbabwe,New Uncommitted,Geothermal,yes
+686,ZIrEPHYDEX,Zimbabwe,Centralised Generation,Renewable,Hydro,Zimbabwe,Zimbabwe,Existing,Kariba South,yes
+687,ZIrEPHYDNU,Zimbabwe,Centralised Generation,Renewable,Hydro,Zimbabwe,Zimbabwe,New Uncommitted,Hydro,yes
+688,ZIrEPHYDNUbat,Zimbabwe,Centralised Generation,Renewable,Hydro,Zimbabwe,Zimbabwe,New Uncommitted,Batoka Gorge hydro,yes
+689,ZIrEPHYDNUkse,Zimbabwe,Centralised Generation,Renewable,Hydro,Zimbabwe,Zimbabwe,New Uncommitted,Kariba South Extension hydro,yes
+690,ZIrEPHYDNUmic,Zimbabwe,Distributed Generation,Renewable,Hydro,Zimbabwe,Zimbabwe,New Uncommitted,Small Hydro,yes
+691,ZIrEPNUCNUPW,Zimbabwe,Centralised Generation,Not renewable,Nuclear,Zimbabwe,Zimbabwe,New Uncommitted,PWR nuclear,yes
+692,ZIrEPODSNU,Zimbabwe,Centralised Generation,Not renewable,Oil,Zimbabwe,Zimbabwe,New Uncommitted,Diesel,yes
+693,ZIrEPODSNUind,Zimbabwe,Distributed Generation,Not renewable,Oil,Zimbabwe,Zimbabwe,New Uncommitted,Diesel 100 kW system (industry),yes
+694,ZIrEPODSNUrur,Zimbabwe,Distributed Generation,Not renewable,Oil,Zimbabwe,Zimbabwe,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+695,ZIrEPODSNUurb,Zimbabwe,Distributed Generation,Not renewable,Oil,Zimbabwe,Zimbabwe,New Uncommitted,Diesel/Gasoline 1kW system (residential/commercial),yes
+696,ZIrEPOHFNU,Zimbabwe,Centralised Generation,Not renewable,Oil,Zimbabwe,Zimbabwe,New Uncommitted,HFO,yes
+697,ZIrEPSOLNUPVrt,Zimbabwe,Distributed Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,Solar PV (roof top - urban),yes
+698,ZIrEPSOLNUPVrtru,Zimbabwe,Distributed Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,Solar PV (roof top - rural),yes
+699,ZIrEPSOLNUPVst,Zimbabwe,Distributed Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,PV with 1hr Battery (roof top - urban),yes
+700,ZIrEPSOLNUPVst2,Zimbabwe,Distributed Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,PV with 2hr Battery (roof top - urban),yes
+701,ZIrEPSOLNUPVstru,Zimbabwe,Distributed Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,PV with 1h Battery (roof top - rural),yes
+702,ZIrEPSOLNUPVstru2,Zimbabwe,Distributed Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,PV with 2h Battery (roof top - rural),yes
+703,ZIrEPSOLNUPVut,Zimbabwe,Centralised Generation,Renewable,Solar PV,Zimbabwe,Zimbabwe,New Uncommitted,Solar PV (utility),yes
+704,ZIrEPTSONUTH,Zimbabwe,Centralised Generation,Renewable,Solar Thermal,Zimbabwe,Zimbabwe,New Uncommitted,Solar thermal no storage,yes
+705,ZIrEPTSONUTHst,Zimbabwe,Centralised Generation,Renewable,Solar Thermal,Zimbabwe,Zimbabwe,New Uncommitted,Solar thermal with Storage,yes
+706,ZIrEPWNDNU25,Zimbabwe,Centralised Generation,Renewable,Wind,Zimbabwe,Zimbabwe,New Uncommitted,Bulk Wind (20% CF),yes
+707,ZIrEPWNDNU30,Zimbabwe,Centralised Generation,Renewable,Wind,Zimbabwe,Zimbabwe,New Uncommitted,Bulk Wind (30% CF),yes
+708,ZIrERural,Zimbabwe,Demand,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Rural,yes
+709,ZIrETrans,Zimbabwe,Transmission (local),N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Local,no
+710,ZIrEUrban,Zimbabwe,Demand,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Urban/Services/Small Industry,yes
+711,ZIrEXelc,Zimbabwe,Export,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Electricity Export,no
+712,ZIrGas,Zimbabwe,Energy Source,Not renewable,Gas,Zimbabwe,Zimbabwe,N/A,Gas,yes
+713,ZIrIMIelc,Zimbabwe,Import,N/A,Electricity,Zimbabwe,Zimbabwe,N/A,Electricity Import,no
+714,ZIrNuclear,Zimbabwe,Energy Source,Not renewable,Nuclear,Zimbabwe,Zimbabwe,N/A,Nuclear,yes
+715,ZIrOHF,Zimbabwe,Energy Source,Not renewable,OHF,Zimbabwe,Zimbabwe,N/A,OHF,yes
+716,ZIrOil,Zimbabwe,Energy Source,Not renewable,Oil,Zimbabwe,Zimbabwe,N/A,Oil,yes
+717,DemTech,Main,DemTech,N/A,DemTech,Main,Main,N/A,N/A,no
