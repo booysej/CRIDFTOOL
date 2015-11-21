@@ -88,7 +88,7 @@ shinyUI(dashboardPage( skin = "blue",
                availabledashboards
    ),
                   sidebarMenu(id="step",
-                    menuItem("Step 0 (Overview)",tabName = "STEP0",icon=icon("glyphicon glyphicon-info-sign",lib = "glyphicon")),
+                    menuItem("Overview",tabName = "STEP0",icon=icon("glyphicon glyphicon-info-sign",lib = "glyphicon")),
                     menuItem("Result Explorer", tabName = "STEP1",icon=icon("desktop")),
                     #menuItem("Step 2 (Lock Policies)", tabName = "STEP2",icon=icon("desktop")),
                     #menuItem("Step 3 (Sensitivities)", tabName = "STEP3",icon=icon("desktop")),
