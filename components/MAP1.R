@@ -20,7 +20,9 @@ div(id="componentDASHBOARD.uuid", style=paste("height: ",(DASHBOARD.height-35),"
     conditionalPanel(
       condition = "output.d1m1DASHBOARD.uuid!=null ",    
       
-      tags$div(id="part3DASHBOARD.uuid",style="position: relative;left: 70px;top: -150px;pointer-events:none;",
+      tags$div(id="part3DASHBOARD.uuid",
+               style="position: absolute;left: 70px;top: 30px;pointer-events:none;",
+               #style="position: relative;left: 70px;top: -150px;pointer-events:none;",
                tags$table(width="100%", style="border-spacing:0; border-collapse: collapse; width:'100%'; ",
                           tags$tr(
                             tags$td(style="horizontal-align: left;pointer-events: all;",
@@ -33,8 +35,8 @@ div(id="componentDASHBOARD.uuid", style=paste("height: ",(DASHBOARD.height-35),"
                                           c("Generation Mix" = "generation",
                                             "CO2 Difference" = "co2",
                                             "Average Price Difference" = "price",
-                                            "New Capacity" = "capacity"
-                                            #"CO2/Generation" = "co2gen"
+                                            "New Capacity" = "capacity",
+                                            "CO2/Generation" = "co2gen"
                                           ),
                                           selected="Generation Mix"
                               )
@@ -134,6 +136,12 @@ output$m1legendDASHBOARD.uuid <- renderImage({
          width = 600,
          height = 30,
          alt = "CO2 Diff Legend")
+  } else {
+    list(src = "www/images/blank.png",
+         contentType = 'image/png',
+         width = 600,
+         height = 30,
+         alt = "")
   }
   
 },deleteFile=FALSE)
@@ -267,6 +275,9 @@ output$d1mapchartDASHBOARD.uuid <- renderChart({
     } else if(input$mapviewDASHBOARD.uuid=="co2") {
       return(demo2(thewater,theuclf,theuclf2,thecountry, thedom="d1mapchartDASHBOARD.uuid",paste(values$startyear,values$endyear,sep="-"),"All",
                    values$startyear,values$endyear,exclGI,varyload,load,seriesname = "CO2",units = "% Difference in CO2 "));  
+    } else if(input$mapviewDASHBOARD.uuid=="co2gen") {
+      return(demo2b(thewater,theuclf,theuclf2,thecountry, thedom="d1mapchartDASHBOARD.uuid",paste(values$startyear,values$endyear,sep="-"),"All",
+                   values$startyear,values$endyear,exclGI,varyload,load));  
     }
       
       

@@ -340,6 +340,78 @@ demo2 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",
   return(h1)       
 }  
 
+
+demo2b <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",thelevel="All",startyear=2011,endyear=2040,
+                  exclGI=FALSE,adjcons=FALSE,cons=0) {
+  
+  td =  getunconstraint(thewater/100, thecoaluclf/100,thetxuclf/100, exclGI,adjcons,100/100)
+  if(length(td[,1])==0) {return(NULL);}
+  
+  tfinal = subset(td, series == "CO2")
+  tfinal1 = subset(td, series == "Generation")  
+  
+  if (thecountry!="All") {
+    tfinal = subset(tfinal, country.name == thecountry)          
+    tfinal1 = subset(tfinal1, country.name == thecountry)
+  }
+  if (thelevel!="All") {
+    tfinal = subset(tfinal, level == thelevel)
+    tfinal1 = subset(tfinal1, level == thelevel)          
+  }
+  tfinal = subset(tfinal, time %in% (seq(startyear,endyear,1)))          
+  tfinal1 = subset(tfinal1, time %in% (seq(startyear,endyear,1)))          
+  
+  if(nrow(tfinal)>0) {
+    tfinala = tfinal[, c("time","value","country.name"),with=F]
+    tfinalb = tfinala[, lapply(.SD, sum), by = c("time","country.name")]     # Mean of AVG Price
+    tfinalb = tfinalb[(tfinalb$time>2010) & (tfinalb$time<2050) ,c("time","country.name","value"),with=F]
+  }
+  if(nrow(tfinal1)>0) {
+    tfinal1a = tfinal1[, c("time","value","country.name"),with=F]
+    tfinal1b = tfinal1a[, lapply(.SD, sum), by = c("time","country.name")]     # Mean of AVG Price
+    tfinal1b = tfinal1b[(tfinal1b$time>2010) & (tfinal1b$time<2050) ,c("time","country.name","value"),with=F]
+  }
+
+  x = tfinalb$value/tfinal1b$value
+  
+  h1 <- rCharts:::Highcharts$new()
+  h1$chart(type = "column",marginLeft=100,height=500)
+  
+  h1$title(text = paste("CO2 / Generation (",thecountry,")",sep=""))
+  
+  h1$subtitle(text = paste(stext,sep=""))
+  
+  if(nrow(tfinal)>0) {
+    h1$xAxis(categories = as.character(tfinalb$time)) #labels = list(rotation = -90))
+    h1$yAxis(title = list(text = "Tons/GWh"))
+    
+    #h1$series(x)  
+    
+    h1$series(list( list(name="CO2/Generation",data=x )))     
+    # Print chart
+  }
+  
+  
+  h1$legend(symbolWidth = 10)
+  h1$set(dom = thedom)
+  h1$plotOptions(animation=FALSE,
+                 column=list(
+                   animation=FALSE,
+                   events=list(
+                     legendItemClick = paste("#! function() {
+                                             console.log(this);
+                                             Shiny.onInputChange(\'",thedom,"LegendItemClick\', {
+                                             name: this.name,
+                                             visible: this.visible  }) } !#",sep="")
+                     #legendItemClick = "#! function() {alert(this.name);  } !#"
+                   )
+                 )
+  )
+  h1$exporting(enabled = T)    
+  
+  return(h1)       
+}  
+
 # 4.1
 demo3 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",thelevel="All",startyear=2011,endyear=2040,
                   exclGI=FALSE,adjcons=FALSE,cons=0) {
@@ -1036,6 +1108,20 @@ plotIcons2 = function(values, pch = 0:14, year=2015, width = 30, height = 30, ty
     }  
   }
   
+  if(type=="bar") {
+    for (i in seq_len(n)) {
+      val = values[[i]]
+      lmin = min(val)
+      lmax = max(val)
+      if(lmin<themin) {
+        themin = lmin
+      }
+      if(lmax>themax) {
+        themax = lmax
+      }    
+    }  
+  }
+  
   for (i in seq_len(n)) {
     f = tempfile(fileext = '.png')        
     val = values[[i]]
@@ -1075,6 +1161,20 @@ plotIcons2 = function(values, pch = 0:14, year=2015, width = 30, height = 30, ty
                 col=cols,las=1,cex.names= 0.75,cex.axis= 0.75,
                 main= paste("'",substr(as.character(year),3,4),sep=""),
                 cex.main=0.8,ylab=units,cex.lab=0.75 )
+      } else {
+        plot(c(1,2),type="n",xaxt="n",yaxt="n",ylab="",xlab="",bty="n")
+      }
+      dev.off()        
+    } else if(type=="bar") {
+      
+      png(f, width = width, height = height, bg = 'transparent')        
+      par(mar = c(1, 4, 1, 0))
+      
+      if(sum( as.numeric(as.character(unlist(val))) )>0) {
+        barplot(val,col=4,  
+                las=1,cex.names= 0.75,cex.axis= 0.75,
+                main= paste("'",substr(as.character(year),3,4),sep=""),
+                cex.main=0.8,ylab=units,cex.lab=0.75,ylim=c(themin,themax) )
       } else {
         plot(c(1,2),type="n",xaxt="n",yaxt="n",ylab="",xlab="",bty="n")
       }

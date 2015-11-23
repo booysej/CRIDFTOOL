@@ -648,6 +648,31 @@ shinyServer(function(input, output, session) {
         });
         chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar",units="%")      
       } else if (mapview=="co2gen") {
+        found = TRUE;
+        td = getunconstraint(thewater/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,cons/100)
+        
+        perval = lapply(seq_along(dt$ID),function(i) {
+          tfinal = subset(td, country.name == as.character(dt@data[i,]$COUNTRY))
+          tfinal1 = subset(tfinal, series == "CO2")
+          tfinal2 = tfinal1[, c("time","value"),with=F]
+          tfinal3 = tfinal2[, lapply(.SD, sum), by = c("time")]     
+          tfinal3 = subset(tfinal3, time == theyear)
+          
+          tfinal1b = subset(tfinal, series == "Generation")
+          tfinal2b = tfinal1b[, c("time","value"),with=F]
+          tfinal3b = tfinal2b[, lapply(.SD, sum), by = c("time")]     
+          tfinal3b = subset(tfinal3b, time == theyear)
+          
+          if(length(tfinal3b$value)>0) {
+           if(tfinal3b$value>0) {
+             return(tfinal3$value/tfinal3b$value)
+           } else {
+             return(0);
+           }
+          } else { return(0); }
+          
+        })
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 70, 70,type="bar",units="Tons/GWh")    
       }
 
       if(found) {
