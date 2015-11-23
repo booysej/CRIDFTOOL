@@ -12,6 +12,17 @@ $(document).ready(function() {
  $('#DASHBOARD.uuid').resizable({
       minHeight: 300,
       resize: function( event, ui ) {
+
+        $('#componentDASHBOARD.uuid').css({
+                'left' : $(this).position().left,
+                'top' : $(this).position().top,
+                'width' : getSetWidth( $(this).width()-40 ),
+                'height' : getSetHeight( $(this).height()-40 )
+            });
+      }
+      
+      
+      ,stop: function( event, ui ) {
         Shiny.onInputChange('dashboard_DASHBOARD.uuid_height',ui.element.context.clientHeight);
         Shiny.onInputChange('dashboard_DASHBOARD.uuid_width',ui.element.context.clientWidth);
         Shiny.onInputChange('dashboard_DASHBOARD.uuid_left',ui.element.context.offsetLeft);
@@ -24,6 +35,7 @@ $(document).ready(function() {
                 'height' : getSetHeight( $(this).height()-40 )
             });
       }
+      
     });
 
 });
