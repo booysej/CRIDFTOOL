@@ -1015,7 +1015,7 @@ idedata$value = as.numeric(as.character(idedata$value))
 
 
 # Avg Price Diff - Side by Side Bars (Map Icon Graph)
-plotIcons2 = function(values, pch = 0:14, year=2015, width = 30, height = 30, type="stacked", ...) {
+plotIcons2 = function(values, pch = 0:14, year=2015, width = 30, height = 30, type="stacked", units="MW", ...) {
   n = length(pch)
   files = character(n)
   # create a sequence of png images
@@ -1074,7 +1074,7 @@ plotIcons2 = function(values, pch = 0:14, year=2015, width = 30, height = 30, ty
         barplot(do.call(rbind,val),  
                 col=cols,las=1,cex.names= 0.75,cex.axis= 0.75,
                 main= paste("'",substr(as.character(year),3,4),sep=""),
-                cex.main=0.8,ylab="MW",cex.lab=0.75 )
+                cex.main=0.8,ylab=units,cex.lab=0.75 )
       } else {
         plot(c(1,2),type="n",xaxt="n",yaxt="n",ylab="",xlab="",bty="n")
       }

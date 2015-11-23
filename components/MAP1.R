@@ -30,13 +30,13 @@ div(id="componentDASHBOARD.uuid", style=paste("height: ",(DASHBOARD.height-35),"
                                           animate=list(loop=TRUE),ticks=FALSE,width = 200,sep="")),
                             tags$td(style="horizontal-align: right;pointer-events: all;",
                               selectInput("mapviewDASHBOARD.uuid","Map Icon Graphs:",
-                                          c("Average Price Difference" = "price",
-                                            "New Capacity" = "capacity",
-                                            "Generation Mix" = "generation",
-                                            "CO2 Difference" = "co2"
+                                          c("Generation Mix" = "generation",
+                                            "CO2 Difference" = "co2",
+                                            "Average Price Difference" = "price",
+                                            "New Capacity" = "capacity"
                                             #"CO2/Generation" = "co2gen"
                                           ),
-                                          selected="New Capacity"
+                                          selected="Generation Mix"
                               )
                             )
                           ),

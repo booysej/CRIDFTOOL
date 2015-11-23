@@ -523,7 +523,7 @@ shinyServer(function(input, output, session) {
           #list(0,0,0,0,0,0,0)
           #as.character(dt@data[i,]$ID)
         })
-        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 70, 70,type="stacked")     
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 70, 70,type="stacked",units="MW")     
         
       } else if (mapview=="price") {
         found = TRUE;
@@ -567,7 +567,7 @@ shinyServer(function(input, output, session) {
           }
           return(a);
         });
-        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar")             
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar",units="%")             
       } else if (mapview=="generation") {
         found = TRUE;
         td = getunconstraint(thewater/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,cons/100)
@@ -603,7 +603,7 @@ shinyServer(function(input, output, session) {
           #list(0,0,0,0,0,0,0)
           #as.character(dt@data[i,]$ID)
         })
-        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 70, 70,type="stacked")     
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 70, 70,type="stacked",units="GWh")     
       } else if (mapview=="co2") {
         found = TRUE;
         td =  getunconstraint(110/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,100/100)
@@ -646,7 +646,7 @@ shinyServer(function(input, output, session) {
           }
           return(a);
         });
-        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar")      
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar",units="%")      
       } else if (mapview=="co2gen") {
       }
 
