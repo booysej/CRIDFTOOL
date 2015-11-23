@@ -4,11 +4,9 @@ minwidth=400
 minheight=400
 
 ui= tags$div(
-  bsModal(id="mapmodalDASHBOARD.uuid", title="New Capacity",trigger=NULL, size = "large",
+  bsModal(id="mapmodalDASHBOARD.uuid", title="Timeseries View",trigger=NULL, size = "large",
          showOutput("d1mapchartDASHBOARD.uuid", "highcharts") 
          ),
-   #fluidRow(
-   #column(12,   
          conditionalPanel(
            condition = "output.d1m1DASHBOARD.uuid==null ",                                    
            div(class = "busy",
@@ -16,41 +14,38 @@ ui= tags$div(
                img(src="ajaxloaderq.gif")
            )
          ),
-         
-         div(id="componentDASHBOARD.uuid", style=paste("height: ",(DASHBOARD.height-35),"px; !important; overflow:hidden;",sep=""),
-                          #class="cridfmap",
-                      #tags$style(type = "text/css", paste(".cridfmap {height: ",(DASHBOARD.height-35),"px; !important; overflow:hidden;}",sep="")),
-                      leafletOutput("d1m1DASHBOARD.uuid", width="100%",height="95%"),
-             
-             conditionalPanel(
-               condition = "output.d1m1DASHBOARD.uuid!=null ",                                    
-             tags$div(id="part1DASHBOARD.uuid",style="position: relative; left: 70px;top: -150px;",
-                      sliderInput("d1yearDASHBOARD.uuid", 
-                                  " Tx Flows Year", 2010, 2031, 2015,1,
-                                  animate=list(loop=TRUE),ticks=FALSE,width = 200,sep="")
-             ),
-             tags$div(id="part2DASHBOARD.uuid",style="position: relative;left: 20px;top: -120px; ",
-                      imageOutput("m1legendDASHBOARD.uuid", height = "30px")
-             ),
-             tags$div(id="part3DASHBOARD.uuid",style="position: relative;left: 70px;top: -200px;",
-                      selectInput("mapviewDASHBOARD.uuid","Map Icon Graphs:",
-                                  c("Average Price Diff" = "price",
-                                    "New Capacity" = "capacity"),
-                                  selected="New Capacity"
-                      ))
-             ) # conditional
-             
-           )
-        
-         
-         
-    #)
-  #)                             
-)
-
+div(id="componentDASHBOARD.uuid", style=paste("height: ",(DASHBOARD.height-35),"px; !important; overflow:hidden;width:'100%';",sep=""),
+    
+    leafletOutput("d1m1DASHBOARD.uuid", width="100%",height="95%"),
+    conditionalPanel(
+      condition = "output.d1m1DASHBOARD.uuid!=null ",    
+      
+      tags$div(id="part3DASHBOARD.uuid",style="position: relative;left: 70px;top: -150px;pointer-events:none;",
+               tags$table(width="100%", style="border-spacing:0; border-collapse: collapse; width:'100%'; ",
+                          tags$tr(
+                            tags$td(style="horizontal-align: left;pointer-events: all;",
+                              sliderInput("d1yearDASHBOARD.uuid", 
+                                          " Tx Flows Year", 
+                                          2010, 2031, 2015,1,
+                                          animate=list(loop=TRUE),ticks=FALSE,width = 200,sep="")),
+                            tags$td(style="horizontal-align: right;pointer-events: all;",
+                              selectInput("mapviewDASHBOARD.uuid","Map Icon Graphs:",
+                                          c("Average Price Difference" = "price",
+                                            "New Capacity" = "capacity",
+                                            "Generation Mix" = "generation",
+                                            "CO2 Difference" = "co2"
+                                            #"CO2/Generation" = "co2gen"
+                                          ),
+                                          selected="New Capacity"
+                              )
+                            )
+                          ),
+                          tags$tr(tags$td(colspan=2,tags$div(style="pointer-events:none;",imageOutput("m1legendDASHBOARD.uuid", height = "30px")) ))
+               )
+      ) #div
+    )))
 
 js = ""
-#js = ""
 
 # Store all Observers here for Lifetime Management
 observerpool[["DASHBOARD.uuid"]] <<- list();
@@ -127,6 +122,18 @@ output$m1legendDASHBOARD.uuid <- renderImage({
          width = 600,
          height = 30,
          alt = "Avg Price Diff Legend")
+  } else if (input$mapviewDASHBOARD.uuid=="generation") {
+    list(src = "www/images/legend2.png",
+         contentType = 'image/png',
+         width = 600,
+         height = 40,
+         alt = "Generation Legend")
+  } else if (input$mapviewDASHBOARD.uuid=="co2") {
+    list(src = "www/images/legend3.png",
+         contentType = 'image/png',
+         width = 600,
+         height = 30,
+         alt = "CO2 Diff Legend")
   }
   
 },deleteFile=FALSE)
@@ -249,11 +256,20 @@ output$d1mapchartDASHBOARD.uuid <- renderChart({
     if(input$mapviewDASHBOARD.uuid=="capacity") {
       return(barunconstraint(thewater,theuclf,theuclf2,thecountry, thedom="d1mapchartDASHBOARD.uuid","Unconstraint","All",
                              values$startyear,
-                             values$endyear,exclGI,varyload,load));     
+                             values$endyear,exclGI,varyload,load,seriesname = "New Capacity"));     
     } else if(input$mapviewDASHBOARD.uuid=="price") {
       return(demo2(thewater,theuclf,theuclf2,thecountry, thedom="d1mapchartDASHBOARD.uuid",paste(values$startyear,values$endyear,sep="-"),"All",
                    values$startyear,values$endyear,exclGI,varyload,load));  
+    } else if(input$mapviewDASHBOARD.uuid=="generation") {
+      return(barunconstraint(thewater,theuclf,theuclf2,thecountry, thedom="d1mapchartDASHBOARD.uuid","Unconstraint","All",
+                             values$startyear,
+                             values$endyear,exclGI,varyload,load,seriesname = "Generation"));     
+    } else if(input$mapviewDASHBOARD.uuid=="co2") {
+      return(demo2(thewater,theuclf,theuclf2,thecountry, thedom="d1mapchartDASHBOARD.uuid",paste(values$startyear,values$endyear,sep="-"),"All",
+                   values$startyear,values$endyear,exclGI,varyload,load,seriesname = "CO2",units = "% Difference in CO2 "));  
     }
+      
+      
   }
 })
 

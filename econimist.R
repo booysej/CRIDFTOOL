@@ -1,21 +1,21 @@
 dashboard = fluidPage(
   fluidRow(
-    column(3,tags$h5("STEP 1 - EVALUATE/CREATE POLICIES"),
-           bsButton("s1s2","Next (Step2) >>",style="primary")
-    ),
-    column(2,sliderInput("d1water", "Water Availability % (Assumption)", 
+    #column(3,tags$h5("STEP 1 - EVALUATE/CREATE POLICIES"),
+    #       bsButton("s1s2","Next (Step2) >>",style="primary")
+    #),
+    column(3,sliderInput("d1water", "Water Availability % (Assumption)", 
                          min(unique(runMasterdata[runMasterdata$policy_id==14,]$water.availability))*100, 
                          max(unique(runMasterdata[runMasterdata$policy_id==14,]$water.availability))*100, 
                          mean(unique(runMasterdata[runMasterdata$policy_id==14,]$water.availability))*100,
                          10,
                          animate=FALSE,ticks=FALSE,width = "100%")),
-    column(2,sliderInput("d1uclf", "Coal UCLF % (Assumption)", 
+    column(3,sliderInput("d1uclf", "Coal UCLF % (Assumption)", 
                          min(unique(runMasterdata[runMasterdata$policy_id==14,]$coal.uclf))*100, 
                          max(unique(runMasterdata[runMasterdata$policy_id==14,]$coal.uclf))*100, 
                          max(unique(runMasterdata[runMasterdata$policy_id==14,]$coal.uclf))*100,
                          10,
                          animate=FALSE,ticks=FALSE)),
-    column(2,
+    column(3,
            sliderInput("d1uclf2", "Transmission UCLF % (Assumption)", 
                        min(unique(runMasterdata[runMasterdata$policy_id==14,]$transmission.uclf))*100, 
                        max(unique(runMasterdata[runMasterdata$policy_id==14,]$transmission.uclf))*100, 

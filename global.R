@@ -10,6 +10,7 @@ library(RSQLite)
 library(R.cache)
 library(memoise)
 library(shiny)
+dir.exists = file.exists
 
 availabledashboards = c("Planner view"="planner.R",
                         "Environmentalist View"="environmentalist.R",
@@ -249,7 +250,7 @@ demo1 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",
 
 # 2.1
 demo2 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",thelevel="All",startyear=2011,endyear=2040,
-                  exclGI=FALSE,adjcons=FALSE,cons=0) {
+                  exclGI=FALSE,adjcons=FALSE,cons=0,seriesname = "Avg Price",units = "Difference in Average Price") {
   
   td =  getunconstraint(110/100, thecoaluclf/100,thetxuclf/100, exclGI,adjcons,100/100)
   td1 = getunconstraint(100/100, thecoaluclf/100,thetxuclf/100, exclGI,adjcons,100/100)
@@ -259,11 +260,13 @@ demo2 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",
   if(length(td1[,1])==0) {return(NULL);}
   if(length(td2[,1])==0) {return(NULL);}
   
-  seriesname = "Avg Price"
   tfinal = subset(td, series == seriesname)
   tfinal1 = subset(td1, series == seriesname)  
   tfinal2 = subset(td2, series == seriesname)  
-  units = "Difference in Average Price"
+  #if(units!="Difference in Average Price") {
+  #  units = as.character(tfinal$unit[1])
+  #}
+  
   if (thecountry!="All") {
     tfinal = subset(tfinal, country.name == thecountry)          
     tfinal1 = subset(tfinal1, country.name == thecountry)
@@ -300,7 +303,11 @@ demo2 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",
   
   h1 <- rCharts:::Highcharts$new()
   h1$chart(type = "column",marginLeft=100,height=500)
-  h1$title(text = paste("The Difference in Average Price (",thecountry,")",sep=""))
+  if(seriesname == "Avg Price") {
+    h1$title(text = paste("The Difference in Average Price (",thecountry,")",sep=""))
+  } else {
+    h1$title(text = paste("The Difference in ",seriesname," (",thecountry,")",sep=""))
+  }
   h1$subtitle(text = paste(stext,sep=""))
   
   if(nrow(tfinal)>0) {
@@ -591,13 +598,13 @@ demo5 <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",
 
 
 barunconstraint <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom="",stext="",thelevel="All",startyear=2011,endyear=2040,
-                            exclGI=FALSE,adjcons=FALSE,cons=0) {
+                            exclGI=FALSE,adjcons=FALSE,cons=0,seriesname = "New Capacity") {
   
   
   td = getunconstraint(thewater/100, thecoaluclf/100,thetxuclf/100, exclGI,adjcons,cons/100)
   if(length(td[,1])==0) {return(NULL);}
   
-  seriesname = "New Capacity"
+  #seriesname = "New Capacity"
   tfinal = subset(td, series == seriesname)  
   units = as.character(tfinal$unit[1])
   
@@ -638,13 +645,13 @@ barunconstraint <- function(thewater,thecoaluclf,thetxuclf,thecountry, thedom=""
   
   h1 <- rCharts:::Highcharts$new()
   h1$chart(type = "column",marginLeft=60,height=300)
-  h1$title(text = paste("New Capacity (",thecountry,")",sep=""))
+  h1$title(text = paste(seriesname," (",thecountry,")",sep=""))
   h1$subtitle(text = paste(stext,sep=""))
   
   if(nrow(tfinal)>0) {
     h1$xAxis(categories = paste("",rownames(x),sep="") )
     h1$yAxis(title = list(text = units),stackLabels= list(enabled=T))
-    h1$data(x)      
+    h1$data(round(x,2))      
     # Print chart
   }
   

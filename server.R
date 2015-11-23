@@ -568,6 +568,86 @@ shinyServer(function(input, output, session) {
           return(a);
         });
         chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar")             
+      } else if (mapview=="generation") {
+        found = TRUE;
+        td = getunconstraint(thewater/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,cons/100)
+        
+        perval = lapply(seq_along(dt$ID),function(i) {
+          tfinal = subset(td, country.name == as.character(dt@data[i,]$COUNTRY))
+          tfinal = subset(tfinal, series == "Generation")
+          tfinal2 = tfinal[, c("time","value","energy.source"),with=F]
+          tfinal3 = tfinal2[, lapply(.SD, sum), by = c("time","energy.source")]     
+          tfinal3 = subset(tfinal3, time == theyear)
+          
+          tdat = as.data.frame(t(reshape(tfinal3,idvar=c("energy.source"),direction="wide")),stringsAsFactors=F)
+          colnames(tdat) = as.character(unlist(tdat[1,]))
+          tdat = tdat[-1,]
+          rownames(tdat) = gsub("value\\.","",rownames(tdat))      
+          
+          x = as.data.frame(apply(tdat,2,as.numeric),stringsAsFactors=F)
+          #rownames(x) = rownames(tdat)
+          if (length(a)>0) {
+            nn <<- rownames(x)
+          } else {
+            nn <<- NULL;
+          }
+          #x = x[order(rownames(x)),]
+          
+          ## HERE
+          a = as.list(round(x[,1]))
+          if (length(a)==0) {
+            a = as.list(rep(0,9))
+          }
+          names(a)=nn
+          return(a)
+          #list(0,0,0,0,0,0,0)
+          #as.character(dt@data[i,]$ID)
+        })
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 70, 70,type="stacked")     
+      } else if (mapview=="co2") {
+        found = TRUE;
+        td =  getunconstraint(110/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,100/100)
+        td1 = getunconstraint(100/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,100/100)
+        td2 = getunconstraint(120/100, thecoaluclf/100,thetxuclf/100, exclGI,TRUE,100/100)
+        
+        perval = lapply(as.character(dt@data$COUNTRY),function(thec) {
+          seriesname = "CO2"
+          tfinal = subset(td, series == seriesname)
+          tfinal1 = subset(td1, series == seriesname)  
+          tfinal2 = subset(td2, series == seriesname)  
+          units = "Difference in CO2"
+          
+          tfinal = subset(tfinal, country.name == thec)          
+          tfinal1 = subset(tfinal1, country.name == thec)
+          tfinal2 = subset(tfinal2, country.name == thec)
+          
+          tfinal = subset(tfinal, time %in% (seq(values$startyear,values$endyear,1)))          
+          tfinal1 = subset(tfinal1, time %in% (seq(values$startyear,values$endyear,1)))          
+          tfinal2 = subset(tfinal2, time %in% (seq(values$startyear,values$endyear,1)))          
+          
+          if(nrow(tfinal)>0) {
+            tfinala = tfinal[, c("time","value","country.name"),with=F]
+            tfinalb = tfinala[, lapply(.SD, mean), by = c("country.name")]     # Mean of AVG Price
+            tfinalb = tfinalb[(tfinalb$time>2010) & (tfinalb$time<2050) ,c("country.name","value"),with=F]
+            
+            tfinal1a = tfinal1[, c("time","value","country.name"),with=F]
+            tfinal1b = tfinal1a[, lapply(.SD, mean), by = c("country.name")]     # Mean of AVG Price
+            tfinal1b = tfinal1b[(tfinal1b$time>2010) & (tfinal1b$time<2050) ,c("country.name","value"),with=F]
+            
+            tfinal2a = tfinal2[, c("time","value","country.name"),with=F]
+            tfinal2b = tfinal2a[, lapply(.SD, mean), by = c("country.name")]     # Mean of AVG Price
+            tfinal2b = tfinal2b[(tfinal2b$time>2010) & (tfinal2b$time<2050) ,c("country.name","value"),with=F]
+            
+            a = list(list(name="10% less water (100%) compared to baseline (110%)", data=(tfinal1b$value - tfinalb$value)),
+                     list(name="10% more water (120%) compared to baseline (110%)",data=(tfinal2b$value - tfinalb$value)) )
+          } else {
+            a =  list(list(name="10% less water than Baseline",data=NULL ),
+                      list(name="10% more water than Baseline",data=NULL ))
+          }
+          return(a);
+        });
+        chart1Files = plotIcons2(perval,dt@data$ID,year=theyear, 100, 70,type="sidebar")      
+      } else if (mapview=="co2gen") {
       }
 
       if(found) {
